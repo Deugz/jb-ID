@@ -1,0 +1,311 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: ""
+    chapters:
+    - file: idées
+  - caption: Menu ID
+    chapters:
+    - file: Menu/Portail
+      sections:
+      - file: Menu/Applications
+      - file: Menu/Page-format
+    - file: Menu/A-Comptoir/A-Comptoir-Acceuil
+      sections:
+      - file: Menu/A-Comptoir/J-Facturation/A-J-Facturation
+      - file: Menu/A-Comptoir/K-Vente-Commerciales/A-K-Vente-Commercial
+      - file: Menu/A-Comptoir/L-Ventes-a-Facturer/A-L-Ventes-a Facturer
+      - file: Menu/A-Comptoir/M-Rappel/A-M-Rappel
+        sections:
+        - file: Menu/A-Comptoir/M-Rappel/T-Rappel-sur-Erreur/A-M-T-Rappel-Erreur
+        - file: Menu/A-Comptoir/M-Rappel/U-Renouvellement/A-M-U-Renouvellement
+        - file: Menu/A-Comptoir/M-Rappel/V-Rappel-Attente/A-M-V-Rappel-Attente
+        - file: Menu/A-Comptoir/M-Rappel/W-Rappel-BL/A-M-W-Rappel-BL        
+      - file: Menu/A-Comptoir/N-Encaissement/A-N-Encaissement
+        sections:
+        - file: Menu/A-Comptoir/N-Encaissement/T-Encaissement-Credit/A-N-T-Encaissement-Credit
+        - file: Menu/A-Comptoir/N-Encaissement/U-Caisse-Centrale/A-N-U-Caisse-Centrale
+      - file: Menu/A-Comptoir/O-Retrocession-Retours/A-O-Retrocession-Retours
+      - file: Menu/A-Comptoir/P-Entrées-Sortie-Especes/A-P-Entrées-Sortie-Especes
+      - file: Menu/A-Comptoir/Q-Messages-DP/A-Q-Message-DP
+        sections:
+        - file: Menu/A-Comptoir/Q-Messages-DP/T-Messages-Alerte-DP/A-Q-T-Messages-Alertes-DP
+        - file: Menu/A-Comptoir/Q-Messages-DP/U-Ruptures-DP/A-Q-U-Ruptures-DP
+      - file: Menu/A-Comptoir/R-Bordereaux-Livraison/A-R-Bordereaux-Livraison
+      - file: Menu/A-Comptoir/S-Remise-Dus/A-S-Remise-Dus
+    - file: Menu/B-Gestion-Stock/B-Gestion-Stock-Acceuil
+      sections:
+      - file: Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/B-J-Prep-Cmd-Repartiteur
+      - file: Menu/B-Gestion-Stock/K-Prep-Cmd-Direct/B-K-Prep-Cmd-Direct
+      - file: Menu/B-Gestion-Stock/L-Transmission-Commande/B-L-Transmission-Commande
+      - file: Menu/B-Gestion-Stock/M-Reception-Commande/B-M-Reception-Commande
+      - file: Menu/B-Gestion-Stock/N-Commandes-Planifiées/B-N-Commandes-Planifiées
+      - file: Menu/B-Gestion-Stock/O-Edition-Etiquettes-Papier/B-O-Edition-Etiquettes-Papier
+      - file: Menu/B-Gestion-Stock/P-Produits-Dus/B-P-Produits-Dus
+      - file: Menu/B-Gestion-Stock/Q-Réappro-Deplacement-Stock/B-Q-Réappro-Deplacement-Stock
+      - file: Menu/B-Gestion-Stock/R-Saisie-Inventaire/B-R-Saisie-Inventaire
+      - file: Menu/B-Gestion-Stock/S-Edition-Inventaire/B-S-Edition-Inventaire
+      - file: Menu/B-Gestion-Stock/T-Entree-Sortie-Stock/B-T-Entree-Sortie-Stock
+      - file: Menu/B-Gestion-Stock/U-Obs-Etiquette-Elec/B-U-Obs-Etiquette-Elec
+      - file: Menu/B-Gestion-Stock/V-Historique-Boites-Serialise/B-V-Historique-Boites-Serialise
+    - file: Menu/C-Données/C-Données-Acceuil
+      sections:
+      - file: Menu/C-Données/J-Patients/C-J-Patients
+      - file: Menu/C-Données/K-Praticiens/C-K-Praticiens
+      - file: Menu/C-Données/L-Produits/C-L-Produits
+      - file: Menu/C-Données/M-Génériques/C-M-Generiques
+      - file: Menu/C-Données/N-Organismes/C-N-Organismes
+        sections:
+        - file: Menu/C-Données/N-Organismes/W-Organismes/C-N-W-Organismes
+        - file: Menu/C-Données/N-Organismes/X-Conventions-AMC/C-N-X-Conventions-AMC
+        - file: Menu/C-Données/N-Organismes/Y-Regroupements-AMC/C-N-Y-Regroupements-AMC
+        - file: Menu/C-Données/N-Organismes/Z-Correspondances-AMC/C-N-Z-Correspondances-AMC
+      - file: Menu/C-Données/O-Fournisseurs/C-O-Fournisseurs
+      - file: Menu/C-Données/P-Promotions/C-P-Promotions
+      - file: Menu/C-Données/Q-Fixation-prix-Vente/C-Q-Fixation-prix-vente
+      - file: Menu/C-Données/R-Profils-Operateurs/C-R-Profils-Operateurs
+        sections:
+        - file: Menu/C-Données/R-Profils-Operateurs/W-Profils/C-R-W-Profils
+        - file: Menu/C-Données/R-Profils-Operateurs/X-Operateurs/C-R-X-Operateurs
+        - file: Menu/C-Données/R-Profils-Operateurs/Y-Gestion-Controle-Secu/C-R-Y-Gestion-Controle-Secu        
+      - file: Menu/C-Données/S-LPP-References/C-S-LPP-References
+      - file: Menu/C-Données/T-Prog-Avantage-Relationnels/C-T-Prog-Avantage-Relationnels
+      - file: Menu/C-Données/U-Autres-Donnees/C-U-Autres-Donnees
+        sections:
+        - file: Menu/C-Données/U-Autres-Donnees/W-Gestion-Zones-Geo/C-U-W-Gestion-Zones-Geo
+        - file: Menu/C-Données/U-Autres-Donnees/X-Gestion-Depots/C-U-X-Gestion-Depots 
+        - file: Menu/C-Données/U-Autres-Donnees/Y-Classifications-Internes/C-U-Y-Classifications-Internes
+        - file: Menu/C-Données/U-Autres-Donnees/Z-Codifications-Libres/C-U-Z-Codifications-Libres
+        - file: Menu/C-Données/U-Autres-Donnees/1-Profils-Remise/C-U-1-Profils-Remise        
+      - file: Menu/C-Données/V-Collectivités/C-V-Collectivités
+    - file: Menu/D-Suivi-Admin/D-Suivi-Admin-Acceuil
+      sections:
+      - file: Menu/D-Suivi-Admin/J-Encours-Reglement/D-J-Encours-Reglement
+        sections:
+        - file: Menu/D-Suivi-Admin/J-Encours-Reglement/T-Saisie-Reglement-TP/D-J-T-Saisie-Reglement-TP
+        - file: Menu/D-Suivi-Admin/J-Encours-Reglement/U-Consultation-Reglements-TP/D-J-U-Consultation-Reglements-TP
+        - file: Menu/D-Suivi-Admin/J-Encours-Reglement/V-Encours-TP/D-J-V-Encours-TP
+        - file: Menu/D-Suivi-Admin/J-Encours-Reglement/W-Gestion-Relances/D-J-W-Gestion-Relances
+        - file: Menu/D-Suivi-Admin/J-Encours-Reglement/X-Balance-Comptable-TP/D-J-X-Balance-Comptable
+        - file: Menu/D-Suivi-Admin/J-Encours-Reglement/Y-Credits/D-J-Y-Credits
+        - file: Menu/D-Suivi-Admin/J-Encours-Reglement/Z-Balance-Compt-Credits/D-J-Z-Balance-Comptable-Credits
+        - file: Menu/D-Suivi-Admin/J-Encours-Reglement/1-Suivi-Financier-TP/D-J-1-Suivi-Financier-TP        
+      - file: Menu/D-Suivi-Admin/K-Teletrans-Caisse/D-K-Teletrans-Caisse
+        sections:
+        - file: Menu/D-Suivi-Admin/K-Teletrans-Caisse/T-Consultation-Lots/D-K-T-Consultation-Lots
+        - file: Menu/D-Suivi-Admin/K-Teletrans-Caisse/U-Transmission/D-K-U-Transmission
+        - file: Menu/D-Suivi-Admin/K-Teletrans-Caisse/V-Message-Service/D-K-V-Messages-Service
+        - file: Menu/D-Suivi-Admin/K-Teletrans-Caisse/W-Consultation-Lots/D-K-W-Consultation-Lots
+        - file: Menu/D-Suivi-Admin/K-Teletrans-Caisse/X-Consultation-AR-Lots/D-K-X-Consultation-AR-Lots
+        - file: Menu/D-Suivi-Admin/K-Teletrans-Caisse/Y-Consultation-Fichiers/D-K-Y-Consultation-Fichiers
+        - file: Menu/D-Suivi-Admin/K-Teletrans-Caisse/Z-Constitution-CD/D-K-Z-Constitution-CD
+      - file: Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/D-L-Gestion-Bande-Caisse
+        sections:
+        - file: Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/T-Actes-Provisoires/D-L-T-Actes-Provisoires
+        - file: Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/U-Actes-Definitifs/D-L-U-Actes-Definitifs
+        - file: Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/V-Consolidation/D-L-V-Consolidation
+        - file: Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/W-Bordereau-CHQCB/D-L-W-Bordereau-CHQCB
+        - file: Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/X-Gestion-Fond-Caisse/D-L-X-Gestion-Fond-Caisse
+        - file: Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/Y-Consultation-Clotures/D-L-Y-Consultation-Clotures        
+      - file: Menu/D-Suivi-Admin/M-Suivi-Factures/D-M-Suivi-Factures
+        sections:
+        - file: Menu/D-Suivi-Admin/M-Suivi-Factures/T-Suivi-Factures/D-M-T-Suivi-Factures
+        - file: Menu/D-Suivi-Admin/M-Suivi-Factures/U-Controle-Ordonnances/D-M-U-Controle-Ordonnances        
+      - file: Menu/D-Suivi-Admin/N-Bordereaux-Organismes/D-N-Bordereaux-Organismes
+      - file: Menu/D-Suivi-Admin/O-Ordonnancier-Stup/D-O-Ordonnancier-Stup
+        sections:
+        - file: Menu/D-Suivi-Admin/O-Ordonnancier-Stup/T-Edition-Ordonnanciers/D-O-T-Edition-Ordonnanciers
+        - file: Menu/D-Suivi-Admin/O-Ordonnancier-Stup/U-Edition-Balance-Stup/D-O-U-Edition-Balance-Stup
+        - file: Menu/D-Suivi-Admin/O-Ordonnancier-Stup/V-Destruction-Stup/D-O-V-Destruction-Stup        
+      - file: Menu/D-Suivi-Admin/P-Releve-Operations/D-P-Releve-Operations
+      - file: Menu/D-Suivi-Admin/Q-Reedition/D-Q-Reedition
+        sections:
+        - file: Menu/D-Suivi-Admin/Q-Reedition/T-Caisse/D-Q-T-Caisse
+        - file: Menu/D-Suivi-Admin/Q-Reedition/U-Gestion-Admin/D-Q-U-Gestion-Admin
+        - file: Menu/D-Suivi-Admin/Q-Reedition/V-Teletrans/D-Q-V-Teletrans
+        - file: Menu/D-Suivi-Admin/Q-Reedition/W-Stock/D-Q-W-Stock
+        - file: Menu/D-Suivi-Admin/Q-Reedition/X-Documentation/D-Q-X-Documentation
+        - file: Menu/D-Suivi-Admin/Q-Reedition/Y-Tracabilite/D-Q-Y-Tracabilite        
+      - file: Menu/D-Suivi-Admin/R-Modules/D-R-Modules
+      - file: Menu/D-Suivi-Admin/S-Livraison-Hors-Pillulier/D-S-Livraison-Hors-Pillulier
+    - file: Menu/E-Config/E-Config-Acceuil
+      sections:
+      - file: Menu/E-Config/J-Gestion-Stock/E-J-Gestion-Stock
+        sections:
+        - file: Menu/E-Config/J-Gestion-Stock/S-Generale/E-J-S-Generale
+        - file: Menu/E-Config/J-Gestion-Stock/T-Commandes/E-J-T-Commandes
+        - file: Menu/E-Config/J-Gestion-Stock/U-Table-Rotation/E-J-U-Table-Rotation
+        - file: Menu/E-Config/J-Gestion-Stock/V-Affectation-Cde-Repartiteur/E-J-V-Affect-Cmd-Repartiteur
+        - file: Menu/E-Config/J-Gestion-Stock/W-Filtres-Alertes/E-J-W-Filtres-Alertes
+        - file: Menu/E-Config/J-Gestion-Stock/X-Inventaire/E-J-X-Inventaire
+        - file: Menu/E-Config/J-Gestion-Stock/Y-Gestion-codes-reponse/E-J-Y-Gestion-codes-reponses        
+      - file: Menu/E-Config/K-Materiel/E-K-Materiel
+        sections:
+        - file: Menu/E-Config/J-Gestion-Stock/S-Materiel/E-K-S-Materiel
+        - file: Menu/E-Config/J-Gestion-Stock/T-Lecteur/E-K-T-Lecteur        
+      - file: Menu/E-Config/L-Officine/E-L-Officine
+        sections:
+        - file: Menu/E-Config/L-Officine/S-Modes-Reglements/E-L-S-Modes-Reglements
+        - file: Menu/E-Config/L-Officine/T-Formulaires/E-L-T-Formulaires
+        - file: Menu/E-Config/L-Officine/U-Parametres-Officine/E-L-U-Parametres-officine
+        - file: Menu/E-Config/L-Officine/V-TVA/E-L-V-TVA 
+        - file: Menu/E-Config/L-Officine/W-Majoration-Dispo-Med/E-L-W-Majoration-Dispo-Med
+        - file: Menu/E-Config/L-Officine/X-Paramètres-Postes/E-L-X-Parametres-Postes
+        - file: Menu/E-Config/L-Officine/Y-Frais-Douane/E-L-Y-Frais-Douane
+      - file: Menu/E-Config/M-Ordonnanceur/E-M-Ordonnanceur
+      - file: Menu/E-Config/N-Gestion-Avancee/E-N-Gestion-Avancee
+        sections:
+        - file: Menu/E-Config/N-Gestion-Avancee/S-Maintenance-Organismes/E-N-S-Maintenance-Organismes
+        - file: Menu/E-Config/N-Gestion-Avancee/T-Prestations/E-N-T-Prestations
+        - file: Menu/E-Config/N-Gestion-Avancee/U-Regimes/E-N-U-Régimes
+        - file: Menu/E-Config/N-Gestion-Avancee/V-Regles/E-N-V-Regles
+        - file: Menu/E-Config/N-Gestion-Avancee/W-Couvertures/E-N-W-Couvertures
+        - file: Menu/E-Config/N-Gestion-Avancee/X-Parametres-Officine/E-N-X-Parametres-Officine
+        - file: Menu/E-Config/N-Gestion-Avancee/Y-Specialites/E-N-Y-Specialites      
+      - file: Menu/E-Config/O-BDM/E-O-BDM
+        sections:
+        - file: Menu/E-Config/O-BDM/S-Param-Import/E-O-S-Parametrage-Import
+        - file: Menu/E-Config/O-BDM/T-Param-MAJ-Base-Produit/E-O-T-Param-MAJ-Base-Produit
+      - file: Menu/E-Config/P-Campagnes/E-P-Campagnes
+      - file: Menu/E-Config/Q-Teletransmission/E-Q-Teletransmission
+        sections:
+        - file: Menu/E-Config/Q-Teletransmission/S-Destinataire-FSE/E-Q-S-Destinataire-FSE
+        - file: Menu/E-Config/Q-Teletransmission/T-Modules/E-Q-T-Modules        
+      - file: Menu/E-Config/R-Etiquettes/E-R-Etiquettes 
+        sections:
+        - file: Menu/E-Config/R-Etiquettes/S-Planches-Etiquettes/E-R-S-Planches-Etiquettes
+        - file: Menu/E-Config/R-Etiquettes/T-Modeles-Etiquettes/E-R-T-Modeles-Etiquettes        
+    - file: Menu/F-BDD/F-BDD-Acceuil
+      sections:
+      - file: Menu/F-BDD/J-Recherche-Produits/F-J-Recherche-Produits
+      - file: Menu/F-BDD/K-MAJ-Produits/F-K-MAJ-Produit      
+    - file: Menu/G-Util-List/G-Util-List-Acceuil
+      sections:
+      - file: Menu/G-Util-List/J-Logiciel/G-J-Logiciel
+        sections:
+        - file: Menu/G-Util-List/J-Logiciel/O-Codification-Produits/G-J-O-Codification-Produits
+        - file: Menu/G-Util-List/J-Logiciel/P-Generateurs-Etats/G-J-P-Generateurs-Etats
+        - file: Menu/G-Util-List/J-Logiciel/Q-Purge-Donnees/G-J-Q-Purge-Donnes
+        - file: Menu/G-Util-List/J-Logiciel/R-Offidoses/G-J-R-Offidoses
+        - file: Menu/G-Util-List/J-Logiciel/S-Messagerie/G-J-S-Messagerie
+        - file: Menu/G-Util-List/J-Logiciel/T-Archivage-Doc-Num/G-J-T-Archivage-Doc-Num
+        - file: Menu/G-Util-List/J-Logiciel/U-Bilan-Financier/G-J-U-Bilan-Financier
+        - file: Menu/G-Util-List/J-Logiciel/V-Synthèse-Param-Officine/G-J-V-Synthese-Param-Officine
+        - file: Menu/G-Util-List/J-Logiciel/W-Modules-Extraction/G-J-W-Modules-Extraction        
+      - file: Menu/G-Util-List/K-Technique/G-K-Technique
+        sections:
+        - file: Menu/G-Util-List/K-Technique/O-Sauvegarde/G-K-O-Sauvegarde
+        - file: Menu/G-Util-List/K-Technique/P-Systeme/G-K-P-Systeme
+        - file: Menu/G-Util-List/K-Technique/Q-Telemaintenance/G-K-Q-Telemaintenance        
+      - file: Menu/G-Util-List/L-Listes/G-L-Listes
+        sections:
+        - file: Menu/G-Util-List/L-Listes/O-Produits-Avances/G-L-O-Produits-Avances
+        - file: Menu/G-Util-List/L-Listes/P-Stocks-a-controler/G-L-P-Stocks-a-controler
+        - file: Menu/G-Util-List/L-Listes/Q-Catalogue-medicaments/G-L-Q-Catalogue-medicaments
+        - file: Menu/G-Util-List/L-Listes/R-Praticiens/G-L-R-Praticiens
+        - file: Menu/G-Util-List/L-Listes/S-Collectivites/G-L-S-Collectivites
+        - file: Menu/G-Util-List/L-Listes/T-Releve-Activite/G-L-T-Releve-Activite
+        - file: Menu/G-Util-List/L-Listes/U-LPP-Disp-Med/G-L-U-LPP-Disp-Med
+        - file: Menu/G-Util-List/L-Listes/V-Achats/G-L-V-Achats
+        - file: Menu/G-Util-List/L-Listes/W-Produits-Vendus/G-L-W-Produits-Vendus
+        - file: Menu/G-Util-List/L-Listes/X-Tracabilite-Stock-Prix/G-L-X-Tracabilite-Stock-Prix
+        - file: Menu/G-Util-List/L-Listes/Y-Tracabilite-Ventes/G-L-Y-Tracabilite-Ventes
+        - file: Menu/G-Util-List/L-Listes/Z-Tracabilite-INS/G-L-Z-Tracabilite-INS       
+      - file: Menu/G-Util-List/M-Cession-Officine/G-M-Cession-Officine
+        sections:
+        - file: Menu/G-Util-List/M-Cession-Officine/O-Vente-Officine/G-M-O-Vente-Officine
+        - file: Menu/G-Util-List/M-Cession-Officine/P-Portabilite-Donnees/G-M-P-Portabilite-Donnees        
+      - file: Menu/G-Util-List/N-TDB-Segur/G-N-TDB-Segur      
+    - file: Menu/H-Suivi-Patient/H-Suivi-Patient-Acceuil
+      sections:
+      - file: Menu/H-Suivi-Patient/J-Liste-Programmes/H-J-Liste-Programmes
+      - file: Menu/H-Suivi-Patient/K-Suivi-Programmes/H-K-Suivi-Programmes
+      - file: Menu/H-Suivi-Patient/L-Suivi-SMS-Mails/H-L-Suivi-SMS-Mails
+      - file: Menu/H-Suivi-Patient/M-Supervision-Services-Patients/H-M-Supervision-Services-Patients   
+    - file: Menu/I-Location/I-Location-Acceuil
+      sections:
+      - file: Menu/I-Location/J-Materiel-Location/I-J-Materiel-Location
+      - file: Menu/I-Location/K-Ouverture-Dossier/I-K-Ouverture-Dossier
+      - file: Menu/I-Location/L-Facturation-Suivi-Dossier/I-L-Facturation-Suivi-Dossier
+      - file: Menu/I-Location/M-Liste-Materiel-Location/I-M-Liste-Materiel-Location
+  - caption: Formations
+    chapters:
+    - file: Formations/Formations-Acceuil
+    - file: Formations/Facturation/Facturation-Acceuil
+      sections:
+      - file: Formations/Facturation/Toutes-Ventes/Toutes-Ventes
+        sections:
+        - file: Formations/Facturation/Toutes-Ventes/Ventes-Directs
+        - file: Formations/Facturation/Toutes-Ventes/Ventes-Ordonnances
+      - file: Formations/Facturation/Creation-Prat-RPPS/Creation-Prat-RPPS
+      - file: Formations/Facturation/BCB/Acces-BCB
+      - file: Formations/Facturation/Remise-Dus/Remise-Dus
+      - file: Formations/Facturation/PharmaML/PharmaML
+      - file: Formations/Facturation/Crea-Patient/Crea-Patient
+      - file: Formations/Facturation/Fiche-Patient/Fiche-Patient
+      - file: Formations/Facturation/Mutuelle/Mutuelle
+      - file: Formations/Facturation/Sérialisation/Sérialisation     
+    - file: Formations/Commande/Commande-Acceuil
+      sections:
+      - file: Formations/Commande/Prep-Cmd-Repartiteur/Prep-Cmd-Repartiteur
+      - file: Formations/Commande/Reception-Commandes/Reception-Commandes
+      - file: Formations/Commande/Reception-Financiere/Reception-financiere
+      - file: Formations/Commande/Prep-Cmd-Direct/Prep-Cmd-Direct
+      - file: Formations/Commande/Creation-Fournisseur/Creation-Fournisseur
+      - file: Formations/Commande/MAJ-Catalogues/MAJ-Catalogues
+      - file: Formations/Commande/Retrocessions-Retours-Fournisseurs/Retro-retours-fournisseurs      
+    - file: Formations/Administratif/Administratif-Acceuil
+      sections:
+      - file: Formations/Administratif/Teletransmission/Teletransmission
+      - file: Formations/Administratif/Suivi-Factures/Suivi-Factures
+      - file: Formations/Administratif/Recyclage-Modif-dossier/Recyclage-Modif-dossier
+      - file: Formations/Administratif/Cloture-Caisses/Cloture-Caisse      
+    - file: Formations/Donnees/Donnees-Acceuil
+      sections:
+      - file: Formations/Donnees/Promotion/Promotion
+      - file: Formations/Donnees/Edition-Etiquettes/Edition-Etiquettes
+      - file: Formations/Donnees/Creation-Produits/Creation-Produits
+      - file: Formations/Donnees/Listing-produits-vendus/Listing-produits-vendus
+      - file: Formations/Donnees/Gestion-promos/Gestion-Promos
+      - file: Formations/Donnees/Regul-stock/Regul-stock
+      - file: Formations/Donnees/Programme-Avantage/Programme-Avantage
+      - file: Formations/Donnees/ID-Decisionel/ID-Decisionel      
+    - file: Formations/Mon-Assistance/Mon-Assistance-Acceuil
+  - caption: Extras
+    chapters:
+    - file: Extras/Installations/Installations
+    - file: Extras/Robots/Robots-main
+      sections:
+      - file: Extras/Robots/Pharmatek/Rb-Pharmatek
+      - file: Extras/Robots/Rowa/Rowa
+    - file: Extras/Migration/Migration-Main
+      sections:
+      - file: Extras/Migration/Smart-RX/Smart-RX-Migration
+      - file: Extras/Migration/Winpharma/Winpharma-Migration    
+    - file: Extras/Numerique-sante/Numerique      
+      sections:
+      - file: Extras/Numerique-sante/Roadmap/Roadmap
+        sections:
+        - file: Extras/Numerique-sante/Roadmap/Roadmap-1
+        - file: Extras/Numerique-sante/Roadmap/Roadmap-2
+        - file: Extras/Numerique-sante/Roadmap/Roadmap-3
+        - file: Extras/Numerique-sante/Roadmap/Roadmap-4
+      - file: Extras/Numerique-sante/Donnees/Donnees
+        sections:
+        - file: Extras/Numerique-sante/Donnees/MSS
+    - file: Extras/Interoperabilite/Interoperabilite      
+      sections:
+      - file: Extras/Interoperabilite/CI-SIS/CI-SIS
+      - file: Extras/Interoperabilite/MOS/MOS-NOS
+      - file: Extras/Interoperabilite/SNOMED/SNOMED
+        sections:
+        - file: Extras/Interoperabilite/SNOMED/test
+  - caption: Appendices
+    chapters:
+    - file: Appendices/bibliography
+    - file: Mon-Espace/Mon-Espace
+      sections:
+      - file: Mon-Espace/Interessant/Interessant

@@ -1,0 +1,835 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="fr" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acces BCB &#8212; Logiciel ID</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/kbd_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/speech-bubble.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/.ipynb_checkpoints/custom_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/.ipynb_checkpoints/kbd_style-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/.ipynb_checkpoints/speech-bubble-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Formations/Facturation/BCB/Acces-BCB';</script>
+    <link rel="canonical" href="https://deugz.github.io/nb-profile/_build/html/Formations/Facturation/BCB/Acces-BCB.html" />
+    <link rel="shortcut icon" href="../../../_static/LOGO_ID_RVB1.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../search.html" />
+    <link rel="next" title="Remise Produits Dus" href="../Remise-Dus/Remise-Dus.html" />
+    <link rel="prev" title="Création Praticien / Annuaire RPPS" href="../Creation-Prat-RPPS/Creation-Prat-RPPS.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="fr"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Passer au contenu principal</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/LOGO_ID_RVB1.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../_static/LOGO_ID_RVB1.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../intro.html">
+                    Logiciel
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../id%C3%A9es.html">Cette Documentation</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Menu ID</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Menu/Portail.html">Le Portail</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/Applications.html">Applications Satellites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/Page-format.html">Format générale des Pages</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Menu/A-Comptoir/A-Comptoir-Acceuil.html">A- Comptoir</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/A-Comptoir/J-Facturation/A-J-Facturation.html">J- Facturation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/A-Comptoir/K-Vente-Commerciales/A-K-Vente-Commercial.html">K- Vente Commercial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/A-Comptoir/L-Ventes-a-Facturer/A-L-Ventes-a%20Facturer.html">L-Ventes a Facturer</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/A-Comptoir/M-Rappel/A-M-Rappel.html">M- Rappel</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/A-Comptoir/M-Rappel/T-Rappel-sur-Erreur/A-M-T-Rappel-Erreur.html">T- Rappel sur Erreur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/A-Comptoir/M-Rappel/U-Renouvellement/A-M-U-Renouvellement.html">U- Renouvellement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/A-Comptoir/M-Rappel/V-Rappel-Attente/A-M-V-Rappel-Attente.html">V- Rappel Attente</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/A-Comptoir/M-Rappel/W-Rappel-BL/A-M-W-Rappel-BL.html">W- Rappel Bons de Livraisons</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/A-Comptoir/N-Encaissement/A-N-Encaissement.html">N- Encaissement</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/A-Comptoir/N-Encaissement/T-Encaissement-Credit/A-N-T-Encaissement-Credit.html">T- Encaissement Crédit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/A-Comptoir/N-Encaissement/U-Caisse-Centrale/A-N-U-Caisse-Centrale.html">U- Caisse Centrale</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/A-Comptoir/O-Retrocession-Retours/A-O-Retrocession-Retours.html">O- Retrocession</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/A-Comptoir/P-Entr%C3%A9es-Sortie-Especes/A-P-Entr%C3%A9es-Sortie-Especes.html">P- Entrées Sortie Espece</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/A-Comptoir/Q-Messages-DP/A-Q-Message-DP.html">Q- Messages DP</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/A-Comptoir/Q-Messages-DP/T-Messages-Alerte-DP/A-Q-T-Messages-Alertes-DP.html">T- Messages Alertes DP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/A-Comptoir/Q-Messages-DP/U-Ruptures-DP/A-Q-U-Ruptures-DP.html">U- Ruptures DP</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/A-Comptoir/R-Bordereaux-Livraison/A-R-Bordereaux-Livraison.html">R- Bordereaux Livraison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/A-Comptoir/S-Remise-Dus/A-S-Remise-Dus.html">S- Remise Dus</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/B-Gestion-Stock-Acceuil.html">B- Gestion Stock</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/B-J-Prep-Cmd-Repartiteur.html">J- Préparation Cde Répartiteur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/K-Prep-Cmd-Direct/B-K-Prep-Cmd-Direct.html">K- Préparation Cde Direct</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/L-Transmission-Commande/B-L-Transmission-Commande.html">L- Transmission Commande</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/M-Reception-Commande/B-M-Reception-Commande.html">M- Reception Commande</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/N-Commandes-Planifi%C3%A9es/B-N-Commandes-Planifi%C3%A9es.html">N- Commandes Planifiées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/O-Edition-Etiquettes-Papier/B-O-Edition-Etiquettes-Papier.html">O- Edition Etiquettes Papier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/P-Produits-Dus/B-P-Produits-Dus.html">P- Produits Dus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/Q-R%C3%A9appro-Deplacement-Stock/B-Q-R%C3%A9appro-Deplacement-Stock.html">Q- Réapprovisionnement Déplacement Stock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/R-Saisie-Inventaire/B-R-Saisie-Inventaire.html">R- Saisie Inventaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/S-Edition-Inventaire/B-S-Edition-Inventaire.html">S- Edition Inventaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/T-Entree-Sortie-Stock/B-T-Entree-Sortie-Stock.html">T- Entrées/Sorties de Stock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/U-Obs-Etiquette-Elec/B-U-Obs-Etiquette-Elec.html">U- Observatoire des Etiquettes Electroniques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/B-Gestion-Stock/V-Historique-Boites-Serialise/B-V-Historique-Boites-Serialise.html">V- Historique des Boites Serialisées</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/C-Donn%C3%A9es-Acceuil.html">C- Données</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/J-Patients/C-J-Patients.html">J- Patients</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/K-Praticiens/C-K-Praticiens.html">K- Praticiens</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/L-Produits/C-L-Produits.html">L- Produits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/M-G%C3%A9n%C3%A9riques/C-M-Generiques.html">M- Génériques</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/N-Organismes/C-N-Organismes.html">N- Organismes</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/N-Organismes/W-Organismes/C-N-W-Organismes.html">W- Organismes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/N-Organismes/X-Conventions-AMC/C-N-X-Conventions-AMC.html">X- Conventions AMC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/N-Organismes/Y-Regroupements-AMC/C-N-Y-Regroupements-AMC.html">Y- Regroupements AMC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/N-Organismes/Z-Correspondances-AMC/C-N-Z-Correspondances-AMC.html">Z- Correspondances AMC</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/O-Fournisseurs/C-O-Fournisseurs.html">O- Fournisseurs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/P-Promotions/C-P-Promotions.html">P- Promotions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/Q-Fixation-prix-Vente/C-Q-Fixation-prix-vente.html">Q- Fixation Prix de Vente</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/R-Profils-Operateurs/C-R-Profils-Operateurs.html">R- Profils et Operateurs</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/R-Profils-Operateurs/W-Profils/C-R-W-Profils.html">W- Profils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/R-Profils-Operateurs/X-Operateurs/C-R-X-Operateurs.html">X- Operateurs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/R-Profils-Operateurs/Y-Gestion-Controle-Secu/C-R-Y-Gestion-Controle-Secu.html">Y- Gestion des Controles de Sécurité</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/S-LPP-References/C-S-LPP-References.html">S- LPP Références</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/T-Prog-Avantage-Relationnels/C-T-Prog-Avantage-Relationnels.html">T- Programmes Avantages et Relationnels</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/U-Autres-Donnees/C-U-Autres-Donnees.html">U- Autres Données</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/U-Autres-Donnees/W-Gestion-Zones-Geo/C-U-W-Gestion-Zones-Geo.html">W- Gestion des Zones Géo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/U-Autres-Donnees/X-Gestion-Depots/C-U-X-Gestion-Depots.html">X- Gestion des Dépots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/U-Autres-Donnees/Y-Classifications-Internes/C-U-Y-Classifications-Internes.html">Y- Classifications Internes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/U-Autres-Donnees/Z-Codifications-Libres/C-U-Z-Codifications-Libres.html">Z- Codifications Libres</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/U-Autres-Donnees/1-Profils-Remise/C-U-1-Profils-Remise.html">1- Profils de Remise</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/C-Donn%C3%A9es/V-Collectivit%C3%A9s/C-V-Collectivit%C3%A9s.html">V- Collectivités</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/D-Suivi-Admin-Acceuil.html">D- Suivi-Administratif</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/J-Encours-Reglement/D-J-Encours-Reglement.html">J- Encours Règlements</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/J-Encours-Reglement/T-Saisie-Reglement-TP/D-J-T-Saisie-Reglement-TP.html">T- Saisie Règlements TP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/J-Encours-Reglement/U-Consultation-Reglements-TP/D-J-U-Consultation-Reglements-TP.html">U- Consultation Règlements TP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/J-Encours-Reglement/V-Encours-TP/D-J-V-Encours-TP.html">V- Encours TP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/J-Encours-Reglement/W-Gestion-Relances/D-J-W-Gestion-Relances.html">W- Gestion des Relances</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/J-Encours-Reglement/X-Balance-Comptable-TP/D-J-X-Balance-Comptable.html">X- Balance Comptable TP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/J-Encours-Reglement/Y-Credits/D-J-Y-Credits.html">Y- Credits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/J-Encours-Reglement/Z-Balance-Compt-Credits/D-J-Z-Balance-Comptable-Credits.html">Z- Balance Comptable Credits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/J-Encours-Reglement/1-Suivi-Financier-TP/D-J-1-Suivi-Financier-TP.html">1- Suivi Financier TP</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/K-Teletrans-Caisse/D-K-Teletrans-Caisse.html">K- Télétransmission Caisse</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/K-Teletrans-Caisse/T-Consultation-Lots/D-K-T-Consultation-Lots.html">T- Consultation des Lots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/K-Teletrans-Caisse/U-Transmission/D-K-U-Transmission.html">U- Transmission</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/K-Teletrans-Caisse/V-Message-Service/D-K-V-Messages-Service.html">V- Messages de Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/K-Teletrans-Caisse/W-Consultation-Lots/D-K-W-Consultation-Lots.html">W- Consultation des Lots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/K-Teletrans-Caisse/X-Consultation-AR-Lots/D-K-X-Consultation-AR-Lots.html">X- Consultation AR Lots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/K-Teletrans-Caisse/Y-Consultation-Fichiers/D-K-Y-Consultation-Fichiers.html">Y- Consultation des fichiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/K-Teletrans-Caisse/Z-Constitution-CD/D-K-Z-Constitution-CD.html">Z- Constitution des CD</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/D-L-Gestion-Bande-Caisse.html">L- Gestion Bande de Caisse</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/T-Actes-Provisoires/D-L-T-Actes-Provisoires.html">T- Actes Provisoires</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/U-Actes-Definitifs/D-L-U-Actes-Definitifs.html">U- Actes Définitifs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/V-Consolidation/D-L-V-Consolidation.html">V- Consolidation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/W-Bordereau-CHQCB/D-L-W-Bordereau-CHQCB.html">W- Bordereau CHQ/CB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/X-Gestion-Fond-Caisse/D-L-X-Gestion-Fond-Caisse.html">X- Gestion du Fond de Caisse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/L-Gestion-Bande-Caisse/Y-Consultation-Clotures/D-L-Y-Consultation-Clotures.html">Y- Consultation des Clotures</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/M-Suivi-Factures/D-M-Suivi-Factures.html">M- Suivi Factures</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/M-Suivi-Factures/T-Suivi-Factures/D-M-T-Suivi-Factures.html">T- Suivi Factures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/M-Suivi-Factures/U-Controle-Ordonnances/D-M-U-Controle-Ordonnances.html">U- Controle Ordonnances</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/N-Bordereaux-Organismes/D-N-Bordereaux-Organismes.html">N- Bordereaux Organismes</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/O-Ordonnancier-Stup/D-O-Ordonnancier-Stup.html">O- Ordonnancier / Stupéfiants</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/O-Ordonnancier-Stup/T-Edition-Ordonnanciers/D-O-T-Edition-Ordonnanciers.html">T- Edition Ordonnanciers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/O-Ordonnancier-Stup/U-Edition-Balance-Stup/D-O-U-Edition-Balance-Stup.html">U- Edition Balance Stup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/O-Ordonnancier-Stup/V-Destruction-Stup/D-O-V-Destruction-Stup.html">V- Destruction Stupéfiants</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/P-Releve-Operations/D-P-Releve-Operations.html">P- Relevé des Operations</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/Q-Reedition/D-Q-Reedition.html">Q- Réédition</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/Q-Reedition/T-Caisse/D-Q-T-Caisse.html">T- Caisse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/Q-Reedition/U-Gestion-Admin/D-Q-U-Gestion-Admin.html">U- Gestion Administrative</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/Q-Reedition/V-Teletrans/D-Q-V-Teletrans.html">Télétransmission</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/Q-Reedition/W-Stock/D-Q-W-Stock.html">W- Stock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/Q-Reedition/X-Documentation/D-Q-X-Documentation.html">X- Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/Q-Reedition/Y-Tracabilite/D-Q-Y-Tracabilite.html">Y- Tracabilité</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/R-Modules/D-R-Modules.html">R- Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/S-Livraison-Hors-Pillulier/D-S-Livraison-Hors-Pillulier.html">S- Livraison Hors Pilulier</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Menu/E-Config/E-Config-Acceuil.html">E- Configuration</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/E-Config/J-Gestion-Stock/E-J-Gestion-Stock.html">J- Gestion Stock</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/J-Gestion-Stock/S-Generale/E-J-S-Generale.html">S- Générale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/J-Gestion-Stock/T-Commandes/E-J-T-Commandes.html">T- Commandes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/J-Gestion-Stock/U-Table-Rotation/E-J-U-Table-Rotation.html">U- Table de Rotation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/J-Gestion-Stock/V-Affectation-Cde-Repartiteur/E-J-V-Affect-Cmd-Repartiteur.html">V- Afffectation Cde Répartiteur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/J-Gestion-Stock/W-Filtres-Alertes/E-J-W-Filtres-Alertes.html">W- Filtres et Alertes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/J-Gestion-Stock/X-Inventaire/E-J-X-Inventaire.html">X- Inventaire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/J-Gestion-Stock/Y-Gestion-codes-reponse/E-J-Y-Gestion-codes-reponses.html">Y- Gestion des codes réponse</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/E-Config/K-Materiel/E-K-Materiel.html">K- Materiel</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/E-Config/L-Officine/E-L-Officine.html">L- Officine</a><input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/L-Officine/S-Modes-Reglements/E-L-S-Modes-Reglements.html">S- Modes de Règlements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/L-Officine/T-Formulaires/E-L-T-Formulaires.html">T- Formulaires</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/L-Officine/U-Parametres-Officine/E-L-U-Parametres-officine.html">U- Paramètres Officine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/L-Officine/V-TVA/E-L-V-TVA.html">V- TVA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/L-Officine/W-Majoration-Dispo-Med/E-L-W-Majoration-Dispo-Med.html">W- Majoration Dispositifs Médicaux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/L-Officine/X-Param%C3%A8tres-Postes/E-L-X-Parametres-Postes.html">X- Paramètres Postes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/L-Officine/Y-Frais-Douane/E-L-Y-Frais-Douane.html">Y- Frais de Douane</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/E-Config/M-Ordonnanceur/E-M-Ordonnanceur.html">M- Ordonnanceur</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/E-Config/N-Gestion-Avancee/E-N-Gestion-Avancee.html">N- Gestion-Avancée</a><input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-22"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/N-Gestion-Avancee/S-Maintenance-Organismes/E-N-S-Maintenance-Organismes.html">S- Maintenance Organismes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/N-Gestion-Avancee/T-Prestations/E-N-T-Prestations.html">T- Prestations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/N-Gestion-Avancee/U-Regimes/E-N-U-R%C3%A9gimes.html">U- Régimes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/N-Gestion-Avancee/V-Regles/E-N-V-Regles.html">V- Règles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/N-Gestion-Avancee/W-Couvertures/E-N-W-Couvertures.html">W- Couvertures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/N-Gestion-Avancee/X-Parametres-Officine/E-N-X-Parametres-Officine.html">X- Paramètres Officine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/N-Gestion-Avancee/Y-Specialites/E-N-Y-Specialites.html">Y- Spécialités</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/E-Config/O-BDM/E-O-BDM.html">O- BDM</a><input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-23"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/O-BDM/S-Param-Import/E-O-S-Parametrage-Import.html">S- Paramétrage Import</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/O-BDM/T-Param-MAJ-Base-Produit/E-O-T-Param-MAJ-Base-Produit.html">T- Paramétrage MAJ Base Produit</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/E-Config/P-Campagnes/E-P-Campagnes.html">P- Campagnes</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/E-Config/Q-Teletransmission/E-Q-Teletransmission.html">Q- Télétransmission</a><input class="toctree-checkbox" id="toctree-checkbox-24" name="toctree-checkbox-24" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-24"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/Q-Teletransmission/S-Destinataire-FSE/E-Q-S-Destinataire-FSE.html">S- Destinataire FSE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/Q-Teletransmission/T-Modules/E-Q-T-Modules.html">T- Modules</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/E-Config/R-Etiquettes/E-R-Etiquettes.html">R- Etiquettes</a><input class="toctree-checkbox" id="toctree-checkbox-25" name="toctree-checkbox-25" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-25"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/R-Etiquettes/S-Planches-Etiquettes/E-R-S-Planches-Etiquettes.html">S- Planches Etiquettes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/E-Config/R-Etiquettes/T-Modeles-Etiquettes/E-R-T-Modeles-Etiquettes.html">T- Modeles d’Etiquettes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Menu/F-BDD/F-BDD-Acceuil.html">F-BDD Medic</a><input class="toctree-checkbox" id="toctree-checkbox-26" name="toctree-checkbox-26" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-26"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/F-BDD/J-Recherche-Produits/F-J-Recherche-Produits.html">J- Recherche Produit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/F-BDD/K-MAJ-Produits/F-K-MAJ-Produit.html">K- MAJ Produits</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Menu/G-Util-List/G-Util-List-Acceuil.html">G- Utilitaires / Listes</a><input class="toctree-checkbox" id="toctree-checkbox-27" name="toctree-checkbox-27" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-27"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/G-Util-List/J-Logiciel/G-J-Logiciel.html">J- Logiciel</a><input class="toctree-checkbox" id="toctree-checkbox-28" name="toctree-checkbox-28" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-28"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/J-Logiciel/O-Codification-Produits/G-J-O-Codification-Produits.html">O- Codification Produits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/J-Logiciel/P-Generateurs-Etats/G-J-P-Generateurs-Etats.html">P- Generateurs d’Etats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/J-Logiciel/Q-Purge-Donnees/G-J-Q-Purge-Donnes.html">Q- Purge des Données</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/J-Logiciel/R-Offidoses/G-J-R-Offidoses.html">R- Offidoses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/J-Logiciel/S-Messagerie/G-J-S-Messagerie.html">S- Messagerie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/J-Logiciel/T-Archivage-Doc-Num/G-J-T-Archivage-Doc-Num.html">T- Archivage Documents Numérisés</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/J-Logiciel/U-Bilan-Financier/G-J-U-Bilan-Financier.html">U- Bilan Financier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/J-Logiciel/V-Synth%C3%A8se-Param-Officine/G-J-V-Synthese-Param-Officine.html">V- Synthèse Paramètres Officine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/J-Logiciel/W-Modules-Extraction/G-J-W-Modules-Extraction.html">W- Modules d’Extraction</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/G-Util-List/K-Technique/G-K-Technique.html">K- Technique</a><input class="toctree-checkbox" id="toctree-checkbox-29" name="toctree-checkbox-29" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-29"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/K-Technique/O-Sauvegarde/G-K-O-Sauvegarde.html">O- Sauvegarde</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/K-Technique/P-Systeme/G-K-P-Systeme.html">P- Système</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/K-Technique/Q-Telemaintenance/G-K-Q-Telemaintenance.html">Q- Télémaintenance</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/G-Util-List/L-Listes/G-L-Listes.html">L- Listes</a><input class="toctree-checkbox" id="toctree-checkbox-30" name="toctree-checkbox-30" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-30"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/L-Listes/O-Produits-Avances/G-L-O-Produits-Avances.html">O- Produits Avancés</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/L-Listes/P-Stocks-a-controler/G-L-P-Stocks-a-controler.html">P- Stocks a controler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/L-Listes/Q-Catalogue-medicaments/G-L-Q-Catalogue-medicaments.html">Q- Catalogue des médicaments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/L-Listes/R-Praticiens/G-L-R-Praticiens.html">R- Praticiens</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/L-Listes/S-Collectivites/G-L-S-Collectivites.html">S-Collectivités</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/L-Listes/T-Releve-Activite/G-L-T-Releve-Activite.html">T- Relevé Activité</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/L-Listes/U-LPP-Disp-Med/G-L-U-LPP-Disp-Med.html">U- LPP Dispositifs Médicaux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/L-Listes/V-Achats/G-L-V-Achats.html">V- Achats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/L-Listes/W-Produits-Vendus/G-L-W-Produits-Vendus.html">W- Produits Vendus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/L-Listes/X-Tracabilite-Stock-Prix/G-L-X-Tracabilite-Stock-Prix.html">X- Tracabilité Stock/Prix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/L-Listes/Y-Tracabilite-Ventes/G-L-Y-Tracabilite-Ventes.html">Y- Traçabilité Ventes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/L-Listes/Z-Tracabilite-INS/G-L-Z-Tracabilite-INS.html">Z- Traçabilité INS</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Menu/G-Util-List/M-Cession-Officine/G-M-Cession-Officine.html">M- Cession d’Officine</a><input class="toctree-checkbox" id="toctree-checkbox-31" name="toctree-checkbox-31" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-31"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/M-Cession-Officine/O-Vente-Officine/G-M-O-Vente-Officine.html">O- Vente de votre Officine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Menu/G-Util-List/M-Cession-Officine/P-Portabilite-Donnees/G-M-P-Portabilite-Donnees.html">P- Portabilité des Données</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/G-Util-List/N-TDB-Segur/G-N-TDB-Segur.html">N- Tableau de Bord Segur</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Menu/H-Suivi-Patient/H-Suivi-Patient-Acceuil.html">H- Service Suivi Patient</a><input class="toctree-checkbox" id="toctree-checkbox-32" name="toctree-checkbox-32" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-32"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/H-Suivi-Patient/J-Liste-Programmes/H-J-Liste-Programmes.html">J- Liste des Programmes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/H-Suivi-Patient/K-Suivi-Programmes/H-K-Suivi-Programmes.html">K- Suivi des Programmes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/H-Suivi-Patient/L-Suivi-SMS-Mails/H-L-Suivi-SMS-Mails.html">L- Suivi des Mails-SMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/H-Suivi-Patient/M-Supervision-Services-Patients/H-M-Supervision-Services-Patients.html">M- Supervision Service Patients</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Menu/I-Location/I-Location-Acceuil.html">I- Location</a><input class="toctree-checkbox" id="toctree-checkbox-33" name="toctree-checkbox-33" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-33"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/I-Location/J-Materiel-Location/I-J-Materiel-Location.html">J- Materiel de Location</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/I-Location/K-Ouverture-Dossier/I-K-Ouverture-Dossier.html">K- Ouverture de Dossier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/I-Location/L-Facturation-Suivi-Dossier/I-L-Facturation-Suivi-Dossier.html">L- Facturation et Suivi de Dossier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/I-Location/M-Liste-Materiel-Location/I-M-Liste-Materiel-Location.html">M- Liste Materiel de Location</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Formations</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Formations-Acceuil.html">Formations</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../Facturation-Acceuil.html">Facturation</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-34" name="toctree-checkbox-34" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-34"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../Toutes-Ventes/Toutes-Ventes.html">Toutes Ventes</a><input class="toctree-checkbox" id="toctree-checkbox-35" name="toctree-checkbox-35" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-35"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Toutes-Ventes/Ventes-Directs.html">Ventes Directes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Toutes-Ventes/Ventes-Ordonnances.html">Ventes Ordonnances</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Creation-Prat-RPPS/Creation-Prat-RPPS.html">Création Praticien / Annuaire RPPS</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Acces BCB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Remise-Dus/Remise-Dus.html">Remise Produits Dus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../PharmaML/PharmaML.html">Pharma ML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Crea-Patient/Crea-Patient.html">Création Patient, Ayant droit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Fiche-Patient/Fiche-Patient.html">Fiche Patient</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Mutuelle/Mutuelle.html">Mutuelle creation/Modif</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Commande/Commande-Acceuil.html">Commandes</a><input class="toctree-checkbox" id="toctree-checkbox-36" name="toctree-checkbox-36" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-36"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Commande/Prep-Cmd-Repartiteur/Prep-Cmd-Repartiteur.html">Préparation Commandes Répartiteur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Commande/Reception-Commandes/Reception-Commandes.html">Réception de Commande</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Commande/Reception-Financiere/Reception-financiere.html">Reception Financière</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Commande/Prep-Cmd-Direct/Prep-Cmd-Direct.html">Preparation Commande Directes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Commande/Creation-Fournisseur/Creation-Fournisseur.html">Création Fournisseur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Commande/MAJ-Catalogues/MAJ-Catalogues.html">MAJ Catalogues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Commande/Retrocessions-Retours-Fournisseurs/Retro-retours-fournisseurs.html">Retrocessions / Retours Fournisseurs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Administratif/Administratif-Acceuil.html">Administratif</a><input class="toctree-checkbox" id="toctree-checkbox-37" name="toctree-checkbox-37" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-37"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Administratif/Teletransmission/Teletransmission.html">Teletransmission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Administratif/Suivi-Factures/Suivi-Factures.html">Suivi Factures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Administratif/Recyclage-Modif-dossier/Recyclage-Modif-dossier.html">Recyclage / Modif Dossier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Administratif/Cloture-Caisses/Cloture-Caisse.html">Cloture des Caisses</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Donnees/Donnees-Acceuil.html">Données</a><input class="toctree-checkbox" id="toctree-checkbox-38" name="toctree-checkbox-38" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-38"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../Donnees/Promotion/Promotion.html">Promotion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Donnees/Edition-Etiquettes/Edition-Etiquettes.html">Edition des Etiquettes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Donnees/Creation-Produits/Creation-Produits.html">Creation Produits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Donnees/Listing-produits-vendus/Listing-produits-vendus.html">Listing Produits Vendus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Donnees/Gestion-promos/Gestion-Promos.html">Gestion des Promos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Donnees/Regul-stock/Regul-stock.html">Régul de Stock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Donnees/Programme-Avantage/Programme-Avantage.html">Programme Avantage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../Donnees/ID-Decisionel/ID-Decisionel.html">ID Decisionel</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Mon-Assistance/Mon-Assistance-Acceuil.html">Mon Assistance</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Extras</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../Extras/Installations/Installations.html">Installations</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Extras/Robots/Robots-main.html">Robots</a><input class="toctree-checkbox" id="toctree-checkbox-39" name="toctree-checkbox-39" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-39"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Extras/Robots/Pharmatek/Rb-Pharmatek.html">Pharmatek</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Extras/Robots/Rowa/Rowa.html">Rowa</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Extras/Migration/Migration-Main.html">Migration</a><input class="toctree-checkbox" id="toctree-checkbox-40" name="toctree-checkbox-40" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-40"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Extras/Migration/Smart-RX/Smart-RX-Migration.html">Smart RX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Extras/Migration/Winpharma/Winpharma-Migration.html">Winpharma</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Extras/Numerique-sante/Numerique.html">Numérique en santé</a><input class="toctree-checkbox" id="toctree-checkbox-41" name="toctree-checkbox-41" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-41"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Extras/Numerique-sante/Roadmap/Roadmap.html">Roadmap</a><input class="toctree-checkbox" id="toctree-checkbox-42" name="toctree-checkbox-42" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-42"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Roadmap/Roadmap-1.html">Prévention</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Roadmap/Roadmap-2.html">Prise en Charge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Roadmap/Roadmap-3.html">Acces a la Santé</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Roadmap/Roadmap-4.html">Cadre Propice</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Extras/Numerique-sante/Donnees/Donnees.html">Données</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-43"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Donnees/MSS.html">MSS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Extras/Interoperabilite/Interoperabilite.html">Interoperabilite</a><input class="toctree-checkbox" id="toctree-checkbox-44" name="toctree-checkbox-44" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-44"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Extras/Interoperabilite/CI-SIS/CI-SIS.html">CI-SIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Extras/Interoperabilite/MOS/MOS-NOS.html">MOS - NOS</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Extras/Interoperabilite/SNOMED/SNOMED.html">SNOMED CT</a><input class="toctree-checkbox" id="toctree-checkbox-45" name="toctree-checkbox-45" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-45"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Interoperabilite/SNOMED/test.html">Test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../Appendices/bibliography.html">Bibliography</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../Mon-Espace/Mon-Espace.html">Mon Espace</a><input class="toctree-checkbox" id="toctree-checkbox-46" name="toctree-checkbox-46" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-46"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../Mon-Espace/Interessant/Interessant.html">Interessant</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Deugz/nb-profile" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Dépôt source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Deugz/nb-profile/edit/master/docs/Formations/Facturation/BCB/Acces-BCB.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Deugz/nb-profile/issues/new?title=Issue%20on%20page%20%2FFormations/Facturation/BCB/Acces-BCB.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Ouvrez un problème"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Téléchargez cette page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/Formations/Facturation/BCB/Acces-BCB.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Télécharger le fichier source"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimer au format PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Mode plein écran"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="clair/sombre" aria-label="clair/sombre" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Recherche" aria-label="Recherche" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Acces BCB</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="acces-bcb">
+<h1>Acces BCB<a class="headerlink" href="#acces-bcb" title="Lien permanent vers cette rubrique">#</a></h1>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Formations\Facturation\BCB"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../Creation-Prat-RPPS/Creation-Prat-RPPS.html"
+       title="page précédente">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">précédent</p>
+        <p class="prev-next-title">Création Praticien / Annuaire RPPS</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../Remise-Dus/Remise-Dus.html"
+       title="page suivante">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Remise Produits Dus</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Par <strong>Vincent Deguin</strong>, <em>Formateur Pharmagest a Bordeaux</em>
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
