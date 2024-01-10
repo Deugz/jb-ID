@@ -59,6 +59,41 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/jb-ID");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script src="../../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../../_static/design-tabs.js"></script>
@@ -69,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Formations/Facturation/Crea-Patient/Crea-Patient';</script>
-    <link rel="canonical" href="https://deugz.github.io/nb-profile/_build/html/Formations/Facturation/Crea-Patient/Crea-Patient.html" />
+    <link rel="canonical" href="https://deugz.github.io/jb-ID/_build/html/Formations/Facturation/Crea-Patient/Crea-Patient.html" />
     <link rel="shortcut icon" href="../../../_static/LOGO_ID_RVB1.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Recherche" href="../../../search.html" />
@@ -118,6 +153,12 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">⚠ En Development  ⚠</div>
+  </div>
+
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
     </nav>
@@ -157,14 +198,6 @@ const thebe_selector_output = ".output, .cell_output"
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../../intro.html">
-                    Logiciel
-                </a>
-            </li>
-        </ul>
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../id%C3%A9es.html">Cette Documentation</a></li>
 </ul>
@@ -307,6 +340,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/R-Modules/D-R-Modules.html">R- Modules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/S-Livraison-Hors-Pillulier/D-S-Livraison-Hors-Pillulier.html">S- Livraison Hors Pilulier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../Menu/D-Suivi-Admin/T-Teledeclaration-Act-Ann/D-T-Teledeclaration-Act-Ann.html">Télédéclaration Activité Annuelle</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../Menu/E-Config/E-Config-Acceuil.html">E- Configuration</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -493,8 +527,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Roadmap/Roadmap-4.html">Cadre Propice</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Extras/Numerique-sante/Donnees/Donnees.html">Données</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-43"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Donnees/MSS.html">MSS</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/Segur.html">Ségur</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-43"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/INS.html">INS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/MSS.html">MSS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/Serialisation.html">Sérialisation</a></li>
 </ul>
 </li>
 </ul>
@@ -508,6 +544,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Extras/Projets/Projets.html">Projets Innovants</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
@@ -570,7 +607,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile" target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Dépôt source"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -587,7 +624,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile/edit/master/docs/Formations/Facturation/Crea-Patient/Crea-Patient.md" target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID/edit/master/docs/Formations/Facturation/Crea-Patient/Crea-Patient.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -604,7 +641,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile/issues/new?title=Issue%20on%20page%20%2FFormations/Facturation/Crea-Patient/Crea-Patient.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID/issues/new?title=Issue%20on%20page%20%2FFormations/Facturation/Crea-Patient/Crea-Patient.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Ouvrez un problème"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -703,7 +740,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -719,6 +758,20 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contenu </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transfert-ayant-droit-en-assure">Transfert ayant droit en assuré</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#patient-anonyme">Patient Anonyme</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#covid">Covid</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preservatif">Preservatif</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cannabis">Cannabis</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -730,6 +783,55 @@ document.write(`
                   
   <div class="tex2jax_ignore mathjax_ignore section" id="creation-patient-ayant-droit">
 <h1>Création Patient, Ayant droit<a class="headerlink" href="#creation-patient-ayant-droit" title="Lien permanent vers cette rubrique">#</a></h1>
+<div class="section" id="transfert-ayant-droit-en-assure">
+<h2>Transfert ayant droit en assuré<a class="headerlink" href="#transfert-ayant-droit-en-assure" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Checker les notes de la formation nationale 1</p>
+</div>
+</div>
+<div class="section" id="patient-anonyme">
+<h2>Patient Anonyme<a class="headerlink" href="#patient-anonyme" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="section" id="covid">
+<h3>Covid<a class="headerlink" href="#covid" title="Lien permanent vers cette rubrique">#</a></h3>
+</div>
+<div class="section" id="preservatif">
+<h3>Preservatif<a class="headerlink" href="#preservatif" title="Lien permanent vers cette rubrique">#</a></h3>
+</div>
+<div class="section" id="cannabis">
+<h3>Cannabis<a class="headerlink" href="#cannabis" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Comment trouver la clé NIR pour créer un patient anonyme dans le cadre d’une délivrance anonyme:</p>
+<ul class="simple">
+<li>Le patient anonyme doit être créé. Pour le créer il nous faut un NIR complet en revanche les deux derniers numéros doivent être créé.</li>
+</ul>
+<p><strong>Liens</strong>:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.ameli.fr/pharmacien/exercice-professionnel/delivrance-produits-sante/regles-delivrance-prise-charge/experimentation-sur-la-delivrance-de-cannabis-medical" rel="noopener noreferrer" target="_blank">Liens Ameli</a></li>
+<li><a class="reference external" href="https://ansm.sante.fr/dossiers-thematiques/cannabis-a-usage-medical/professionnels-de-sante-formation-prescription-dispensation" rel="noopener noreferrer" target="_blank">Liens ANSM</a></li>
+</ul>
+<br>
+<br>
+<div id="267" class="cc-calculator" data-id="267" data-calculator="/calcul/cle-nir/" data-name="Calcul Clé NIR" data-link-text="commentcalculer.fr/calcul/cle-nir/" data-title="Calcul Clé NIR" data-description="" data-version="1.0.0">
+</div>
+<script type="text/javascript" src="https://cdn.commentcalculer.fr/wp-content/themes/commentcalculer-child/assets/js/embed.js"></script> 
+<script type='text/javascript'> 
+  document.addEventListener('DOMContentLoaded', function(event) { 
+  jsEmbed.start(267);
+ var eventMethod = window.addEventListener ? 'addEventListener' : 'attachEvent'; 
+ var eventer = window[eventMethod]; 
+ var messageEvent = eventMethod == 'attachEvent' ? 'onmessage' : 'message'; 
+ eventer(messageEvent,function(e) { 
+    if(e.data.toString().startsWith('cc-tool')) { 
+     var res = e.data.split('|'); 
+     document.getElementsByClassName('cc-calculator-iframe-' + res[2])[0].height = res[1] + 'px'; 
+    } 
+ },false); 
+  }); 
+</script>
+<br>
+<br>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -790,6 +892,26 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenu
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transfert-ayant-droit-en-assure">Transfert ayant droit en assuré</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#patient-anonyme">Patient Anonyme</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#covid">Covid</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preservatif">Preservatif</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cannabis">Cannabis</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

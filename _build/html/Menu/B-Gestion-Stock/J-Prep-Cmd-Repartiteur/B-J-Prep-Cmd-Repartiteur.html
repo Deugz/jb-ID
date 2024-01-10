@@ -59,6 +59,41 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/jb-ID");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script src="../../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../../_static/design-tabs.js"></script>
@@ -69,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/B-J-Prep-Cmd-Repartiteur';</script>
-    <link rel="canonical" href="https://deugz.github.io/nb-profile/_build/html/Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/B-J-Prep-Cmd-Repartiteur.html" />
+    <link rel="canonical" href="https://deugz.github.io/jb-ID/_build/html/Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/B-J-Prep-Cmd-Repartiteur.html" />
     <link rel="shortcut icon" href="../../../_static/LOGO_ID_RVB1.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Recherche" href="../../../search.html" />
@@ -118,6 +153,12 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">⚠ En Development  ⚠</div>
+  </div>
+
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
     </nav>
@@ -157,14 +198,6 @@ const thebe_selector_output = ".output, .cell_output"
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../../intro.html">
-                    Logiciel
-                </a>
-            </li>
-        </ul>
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../id%C3%A9es.html">Cette Documentation</a></li>
 </ul>
@@ -307,6 +340,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../D-Suivi-Admin/R-Modules/D-R-Modules.html">R- Modules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../D-Suivi-Admin/S-Livraison-Hors-Pillulier/D-S-Livraison-Hors-Pillulier.html">S- Livraison Hors Pilulier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../D-Suivi-Admin/T-Teledeclaration-Act-Ann/D-T-Teledeclaration-Act-Ann.html">Télédéclaration Activité Annuelle</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../E-Config/E-Config-Acceuil.html">E- Configuration</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -493,8 +527,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Roadmap/Roadmap-4.html">Cadre Propice</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Extras/Numerique-sante/Donnees/Donnees.html">Données</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-43"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Donnees/MSS.html">MSS</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/Segur.html">Ségur</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-43"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/INS.html">INS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/MSS.html">MSS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/Serialisation.html">Sérialisation</a></li>
 </ul>
 </li>
 </ul>
@@ -508,6 +544,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Extras/Projets/Projets.html">Projets Innovants</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
@@ -570,7 +607,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile" target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Dépôt source"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -587,7 +624,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile/edit/master/docs/Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/B-J-Prep-Cmd-Repartiteur.md" target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID/edit/master/docs/Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/B-J-Prep-Cmd-Repartiteur.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -604,7 +641,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile/issues/new?title=Issue%20on%20page%20%2FMenu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/B-J-Prep-Cmd-Repartiteur.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID/issues/new?title=Issue%20on%20page%20%2FMenu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/B-J-Prep-Cmd-Repartiteur.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Ouvrez un problème"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -726,7 +763,28 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceuil">Acceuil</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceuil">Acceuil</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametres">Paramètres</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exemple">Exemple</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#le-tableau">Le Tableau</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mecanisme-d-action">Mécanisme d’action</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#les-differents-pictogrammes">Les différents pictogrammes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#les-couleurs">Les couleurs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f2-detail">F2 - Détail</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f11">F11</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validation">Validation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transmission">Transmission</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-des-manquants">Gestion des manquants</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -744,7 +802,564 @@ document.write(`
 <h2>Acceuil<a class="headerlink" href="#acceuil" title="Lien permanent vers cette rubrique">#</a></h2>
 <div class="figure align-default" id="b-j-acceuil">
 <a class="reference internal image-reference" href="../../../_images/B-J1.png"><img alt="../../../_images/B-J1.png" src="../../../_images/B-J1.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 14 </span><span class="caption-text">B-J Page d’Acceuil</span><a class="headerlink" href="#b-j-acceuil" title="Lien permanent vers cette image">#</a></p>
+<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">B-J Page d’Acceuil</span><a class="headerlink" href="#b-j-acceuil" title="Lien permanent vers cette image">#</a></p>
+</div>
+<div class="section" id="parametres">
+<h3>Paramètres<a class="headerlink" href="#parametres" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<h4> Affectation du répartiteur </h4>
+<p>On peut choisir de préparer la commande:</p>
+<ul class="simple">
+<li>Pour 1 répartiteur</li>
+<li>Pour certains répartiteurs</li>
+<li>Pour tout les répartiteurs</li>
+<li>Forcer vers 1 répartiteurs</li>
+</ul>
+<p>Une fois l’option choisi, il suffit de rentrer manuellement le (ou les) répartiteurs en question.</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-6 sd-col-xs-6 sd-col-sm-6 sd-col-md-6 sd-col-lg-6 docutils">
+<h4> Forcer les quantité à commander </h4>
+<p>Si on ne met rien dans cette case, ID va réaliser une <em>commande normal</em> (Expliquer). En revanche, on peut également rentrer une durée (en jours) dans certains cas, lorsqu’on est de garde par exemple et qu’on veut stocker certains produits pour une durée un peu plus importante.</p>
+</div>
+</div>
+</div>
+<br>
+<br>
+</div>
+<div class="section" id="exemple">
+<h3>Exemple<a class="headerlink" href="#exemple" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="full-width docutils">
+<div class="figure align-default" id="b-j-2-acceuil">
+<a class="reference internal image-reference" href="../../../_images/B-J-2.png"><img alt="../../../_images/B-J-2.png" src="../../../_images/B-J-2.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">B-J-2 Page d’Acceuil</span><a class="headerlink" href="#b-j-2-acceuil" title="Lien permanent vers cette image">#</a></p>
+</div>
+</div>
+<p>On voit apparaitre a l’écran un tableau</p>
+<div class="section" id="le-tableau">
+<h4>Le Tableau<a class="headerlink" href="#le-tableau" title="Lien permanent vers cette rubrique">#</a></h4>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Sél</label><div class="sd-tab-content docutils">
+<p><strong>Optimisation</strong>: Deux options pour supprimer une ligne</p>
+<ul class="simple">
+<li>Appuyer sur Suppr (pas optimal)</li>
+<li>Appuyer sur 0 (pour pas le commander) et appuyer sur entrer (on veut ca, plus rapide)</li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Produit</label><div class="sd-tab-content docutils">
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+MV Pond.</label><div class="sd-tab-content docutils">
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
+Qté</label><div class="sd-tab-content docutils">
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-4">
+Stock</label><div class="sd-tab-content docutils">
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-5">
+Dus Vte</label><div class="sd-tab-content docutils">
+</div>
+<input id="sd-tab-item-6" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-6">
+En Cde</label><div class="sd-tab-content docutils">
+</div>
+<input id="sd-tab-item-7" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-7">
+Tarif Cde</label><div class="sd-tab-content docutils">
+</div>
+<input id="sd-tab-item-8" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-8">
+Fournisseur</label><div class="sd-tab-content docutils">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="mecanisme-d-action">
+<h2>Mécanisme d’action<a class="headerlink" href="#mecanisme-d-action" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Expliquer ici comment le panier de commande est généré avec liens vers:</p>
+<ul class="last simple">
+<li>table de rotation …</li>
+</ul>
+</div>
+<div class="section" id="les-differents-pictogrammes">
+<h3>Les différents pictogrammes<a class="headerlink" href="#les-differents-pictogrammes" title="Lien permanent vers cette rubrique">#</a></h3>
+</div>
+<div class="section" id="les-couleurs">
+<h3>Les couleurs<a class="headerlink" href="#les-couleurs" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Expliquer ici que l’on peut associer plusieurs couleurs dans les paramètres.</p>
+</div>
+</div>
+</div>
+<div class="section" id="f2-detail">
+<h2>F2 - Détail<a class="headerlink" href="#f2-detail" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="full-width docutils">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-9" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-9">
+A</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Modification de la Fiche Produit</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-10" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-10">
+B</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Profil Produit</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-11" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-11">
+C</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Modifier Le Stock</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-12" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-12">
+D</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Fiche de Suivi de Stock</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-13" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-13">
+E</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>BDM</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-14" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-14">
+F</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Génériques</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-15" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-15">
+G</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Historique des Achats</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-16" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-16">
+H</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Calcul de la quantité commandé</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-17" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-17">
+I</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Commande Planifiée</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-18" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-18">
+J</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Modification de la Fiche Fournisseur</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default" id="b-j-f2-j">
+<a class="reference internal image-reference" href="../../../_images/B-J-F2-J.png"><img alt="../../../_images/B-J-F2-J.png" src="../../../_images/B-J-F2-J.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text">B-J-F2-J</span><a class="headerlink" href="#b-j-f2-j" title="Lien permanent vers cette image">#</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-19" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-19">
+K</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Trace Stock</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default" id="b-j-f2-k">
+<a class="reference internal image-reference" href="../../../_images/B-J-F2-K.png"><img alt="../../../_images/B-J-F2-K.png" src="../../../_images/B-J-F2-K.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-20" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-20">
+L</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Commentaire Commande</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-21" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-21">
+M</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Commentaire Répartiteur</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-22" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-22">
+N</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>N° Commande Spéciale</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-23" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-23">
+O</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Renumérotation - Copie</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-24" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-24">
+P</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Dernières ventes par client</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-25" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-25">
+Q</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Changement de répartiteur</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-26" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-26">
+R</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Comparaisons classification</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-27" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-27">
+S</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>LPP Associés au produit</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-28" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-28">
+T</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Demande Info Stock Officentral</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-29" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-29">
+U</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Comparaison Prix OSPharm</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-30" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-30">
+V</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Comparaison prix de vente</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-31" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-31">
+W</label><div class="sd-tab-content docutils">
+<p class="emphase2"><strong>Liste importés du PDA</strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<blockquote>
+<div>Some text to explain</div></blockquote>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png"><img alt="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" src="Menu/B-Gestion-Stock/J-Prep-Cmd-Repartiteur/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="f11">
+<h3>F11<a class="headerlink" href="#f11" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>raccourci F2 - S: permet de commander chez un autre répartiteur</p>
+</div>
+</div>
+<div class="section" id="validation">
+<h2>Validation<a class="headerlink" href="#validation" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="section" id="transmission">
+<h3>Transmission<a class="headerlink" href="#transmission" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="figure align-default" id="b-j-transmission">
+<a class="reference internal image-reference" href="../../../_images/B-J-Transmission.png"><img alt="../../../_images/B-J-Transmission.png" src="../../../_images/B-J-Transmission.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">Ecran Transmission</span><a class="headerlink" href="#b-j-transmission" title="Lien permanent vers cette image">#</a></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Quand on fait échap aprés la validation (mais avant transmission), on revient au niveau du menu. Cependant lorsqu’on revient en prep cmd on peut la récupérer en faisant F10</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Capture écran transmission</p>
+</div>
+<p>Si on fait Fin, pas de transmission.</p>
+<p>Appuyer sur F8 pour transmettre la commande</p>
+</div>
+<div class="section" id="gestion-des-manquants">
+<h3>Gestion des manquants<a class="headerlink" href="#gestion-des-manquants" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="figure align-default" id="b-j-manquants">
+<a class="reference internal image-reference" href="../../../_images/B-J-Manquants.png"><img alt="../../../_images/B-J-Manquants.png" src="../../../_images/B-J-Manquants.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 28 </span><span class="caption-text">B-J-Manquants</span><a class="headerlink" href="#b-j-manquants" title="Lien permanent vers cette image">#</a></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Gestion des codes manquants (lien vers paramètres)</p>
+</div>
 </div>
 </div>
 </div>
@@ -816,7 +1431,28 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceuil">Acceuil</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceuil">Acceuil</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametres">Paramètres</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exemple">Exemple</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#le-tableau">Le Tableau</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mecanisme-d-action">Mécanisme d’action</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#les-differents-pictogrammes">Les différents pictogrammes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#les-couleurs">Les couleurs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f2-detail">F2 - Détail</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f11">F11</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#validation">Validation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transmission">Transmission</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gestion-des-manquants">Gestion des manquants</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

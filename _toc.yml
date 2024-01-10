@@ -131,6 +131,7 @@ parts:
         - file: Menu/D-Suivi-Admin/Q-Reedition/Y-Tracabilite/D-Q-Y-Tracabilite        
       - file: Menu/D-Suivi-Admin/R-Modules/D-R-Modules
       - file: Menu/D-Suivi-Admin/S-Livraison-Hors-Pillulier/D-S-Livraison-Hors-Pillulier
+      - file: Menu/D-Suivi-Admin/T-Teledeclaration-Act-Ann/D-T-Teledeclaration-Act-Ann
     - file: Menu/E-Config/E-Config-Acceuil
       sections:
       - file: Menu/E-Config/J-Gestion-Stock/E-J-Gestion-Stock
@@ -293,9 +294,11 @@ parts:
         - file: Extras/Numerique-sante/Roadmap/Roadmap-2
         - file: Extras/Numerique-sante/Roadmap/Roadmap-3
         - file: Extras/Numerique-sante/Roadmap/Roadmap-4
-      - file: Extras/Numerique-sante/Donnees/Donnees
+      - file: Extras/Numerique-sante/Segur/Segur
         sections:
-        - file: Extras/Numerique-sante/Donnees/MSS
+        - file: Extras/Numerique-sante/Segur/INS
+        - file: Extras/Numerique-sante/Segur/MSS
+        - file: Extras/Numerique-sante/Segur/Serialisation        
     - file: Extras/Interoperabilite/Interoperabilite      
       sections:
       - file: Extras/Interoperabilite/CI-SIS/CI-SIS
@@ -303,6 +306,7 @@ parts:
       - file: Extras/Interoperabilite/SNOMED/SNOMED
         sections:
         - file: Extras/Interoperabilite/SNOMED/test
+    - file: Extras/Projets/Projets
   - caption: Appendices
     chapters:
     - file: Appendices/bibliography

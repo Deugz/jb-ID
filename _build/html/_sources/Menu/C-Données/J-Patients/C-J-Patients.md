@@ -547,7 +547,26 @@ name: Burger-Consentements
 :columns: 3
 
 
-> Some text to explain
+> **Relevé d'opération**: On peut en créer plusieurs types ... Impression de factures pour les professionels (exemple médecin)
+
+> **Profil de Remise**: 
+> - Remise fixe
+> - Remise par palier
+> - Remise tarex (existe plus)
+> - ...
+
+On peut insérer différents types de remises en fonction des taux de TVA sur les produits 
+
+```{note}
+
+Imprtant de donner des noms cohérent pour chaque profile: ex
+- remise médecin
+- remise infirmier
+- remise équipe
+
+
+```
+
 
 :::
 

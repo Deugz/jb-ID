@@ -59,6 +59,41 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/jb-ID");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script src="../../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../../_static/design-tabs.js"></script>
@@ -69,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Menu/C-Données/V-Collectivités/C-V-Collectivités';</script>
-    <link rel="canonical" href="https://deugz.github.io/nb-profile/_build/html/Menu/C-Données/V-Collectivités/C-V-Collectivités.html" />
+    <link rel="canonical" href="https://deugz.github.io/jb-ID/_build/html/Menu/C-Données/V-Collectivités/C-V-Collectivités.html" />
     <link rel="shortcut icon" href="../../../_static/LOGO_ID_RVB1.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Recherche" href="../../../search.html" />
@@ -118,6 +153,12 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">⚠ En Development  ⚠</div>
+  </div>
+
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
     </nav>
@@ -157,14 +198,6 @@ const thebe_selector_output = ".output, .cell_output"
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../../intro.html">
-                    Logiciel
-                </a>
-            </li>
-        </ul>
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../id%C3%A9es.html">Cette Documentation</a></li>
 </ul>
@@ -307,6 +340,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../D-Suivi-Admin/R-Modules/D-R-Modules.html">R- Modules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../D-Suivi-Admin/S-Livraison-Hors-Pillulier/D-S-Livraison-Hors-Pillulier.html">S- Livraison Hors Pilulier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../D-Suivi-Admin/T-Teledeclaration-Act-Ann/D-T-Teledeclaration-Act-Ann.html">Télédéclaration Activité Annuelle</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../E-Config/E-Config-Acceuil.html">E- Configuration</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -493,8 +527,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Roadmap/Roadmap-4.html">Cadre Propice</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Extras/Numerique-sante/Donnees/Donnees.html">Données</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-43"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Donnees/MSS.html">MSS</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/Segur.html">Ségur</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-43"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/INS.html">INS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/MSS.html">MSS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/Serialisation.html">Sérialisation</a></li>
 </ul>
 </li>
 </ul>
@@ -508,6 +544,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Extras/Projets/Projets.html">Projets Innovants</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
@@ -570,7 +607,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile" target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Dépôt source"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -587,7 +624,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile/edit/master/docs/Menu/C-Données/V-Collectivités/C-V-Collectivités.md" target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID/edit/master/docs/Menu/C-Données/V-Collectivités/C-V-Collectivités.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -604,7 +641,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile/issues/new?title=Issue%20on%20page%20%2FMenu/C-Données/V-Collectivités/C-V-Collectivités.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID/issues/new?title=Issue%20on%20page%20%2FMenu/C-Données/V-Collectivités/C-V-Collectivités.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Ouvrez un problème"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -727,6 +764,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceuil">Acceuil</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#en-pratique">En Pratique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creer-une-collectivite">Créer une collectivité</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -744,7 +785,72 @@ document.write(`
 <h2>Acceuil<a class="headerlink" href="#acceuil" title="Lien permanent vers cette rubrique">#</a></h2>
 <div class="figure align-default" id="c-v-acceuil">
 <a class="reference internal image-reference" href="../../../_images/C-V1.png"><img alt="../../../_images/C-V1.png" src="../../../_images/C-V1.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 36 </span><span class="caption-text">C-V Page d’Acceuil</span><a class="headerlink" href="#c-v-acceuil" title="Lien permanent vers cette image">#</a></p>
+<p class="caption"><span class="caption-number">Fig. 52 </span><span class="caption-text">C-V Page d’Acceuil</span><a class="headerlink" href="#c-v-acceuil" title="Lien permanent vers cette image">#</a></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Anciene fiche patient</p>
+</div>
+</div>
+<div class="section" id="en-pratique">
+<h2>En Pratique<a class="headerlink" href="#en-pratique" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="section" id="creer-une-collectivite">
+<h3>Créer une collectivité<a class="headerlink" href="#creer-une-collectivite" title="Lien permanent vers cette rubrique">#</a></h3>
+<ul class="simple">
+<li><strong>Exemple</strong>: EHPAD</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Créer une section avec les différents onglets</p>
+</div>
+<div class="full-width docutils">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-0">
+Adresse</label><div class="sd-tab-content docutils">
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-1">
+Commentaires</label><div class="sd-tab-content docutils">
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-2">
+Profils commerciales - Gestion</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li>Profils de remise</li>
+<li>Profils d’édition<ul>
+<li>D-P <span class="xref myst">Relevé des opérations</span></li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Insérer les liens vers les pages pour créer ces différents profils</p>
+</div>
+<ul class="simple">
+<li><strong>Code Activité</strong>: permet de centraliser les differentes activités d’une meme structure<ul>
+<li>Exemple: On a deux médecins qui sont dans un meme cabinet, on crée un compte collectif pour chaque, lorsqu’ils prennent des produits pour eux et un compte pour la structure lorsqu’ils prennent des produits communs. En associant un meme code d’activité pour les trois il est ainsi plus facile d’obtenir le chiffre d’affaire de la structure totale.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>On peut créer un code activité sans collectivités</p>
+<p class="last">On peut aussi allouer un code activité depuis la fiche patient (Informations commerciales/information professionnels)</p>
+</div>
+<p>L’information peut etre obtenue dans G-Relevé d’activité</p>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-3">
+Adhérents</label><div class="sd-tab-content docutils">
+Ajouter les adhérents manuellement a l’interieur du tableau. On peut directement rentrer le nom de l’EHPAD dans la section client lorsque l’on est en facturation crédit. Cette manipulation ajoutera la cliente aux adhérents de l’EHPAD.</div>
+</div>
+</div>
+<p>On rentre le nom, si la collectivité existe il nous la propose, sinon on peut cliquer sur F3 pour créer la structure</p>
+<ul class="simple">
+<li>On est obligé de renseigner une adresse (cf triangle rouge)</li>
+<li>Profil d’édition</li>
+</ul>
 </div>
 </div>
 </div>
@@ -817,6 +923,10 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceuil">Acceuil</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#en-pratique">En Pratique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#creer-une-collectivite">Créer une collectivité</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

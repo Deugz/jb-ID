@@ -156,3 +156,10 @@ name: C-O-icon
 :::::
 
 ::::::
+
+```{note}
+
+Insérer lien vers fiche fournisseur
+
+
+```

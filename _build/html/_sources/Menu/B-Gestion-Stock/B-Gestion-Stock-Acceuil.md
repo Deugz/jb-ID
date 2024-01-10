@@ -286,6 +286,7 @@ name: B-V-icon
 ```
 
 +++
+
 ![flag alt >](../../_static/Svg_icons/Under_construction.svg)
 
 :::
@@ -294,3 +295,162 @@ name: B-V-icon
 
 
 :::::
+
+## Les Bonnes Pratiques
+
+:::::{div} full-width
+
+
+<p class="emphase2"> Minimum de due, sans avoir un stock pléthorique</p>
+
+::::{grid} 2
+
+:::{grid-item}
+:columns: 6
+
+> Explication
+
+
+:::
+
+:::{grid-item}
+:columns: 6
+
+```{figure} Docs/Gestion-stock-main.png
+---
+width: 100%
+name: Gestion-stock-main
+---
+Gestion-stock-main
+```
+
+
+:::
+
+
+::::
+
+:::::
+
+### Au Comptoir
+
+:::::{div} full-width
+::::{grid} 2
+
+:::{grid-item}
+:columns: 6
+
+> Explication
+
+
+:::
+
+:::{grid-item}
+:columns: 6
+
+```{figure} Docs/Gestion-stock-vente.png
+---
+width: 100%
+name: Gestion-stock-vente
+---
+Gestion-stock-vente
+```
+
+
+:::
+
+
+::::
+:::::
+
+
+
+### En Réception
+
+:::::{div} full-width
+::::{grid} 2
+
+:::{grid-item}
+:columns: 6
+
+> Explication
+
+
+:::
+
+:::{grid-item}
+:columns: 6
+
+```{figure} Docs/Gestion-stock-reception.png
+---
+width: 100%
+name: Gestion-stock-reception
+---
+Gestion-stock-reception
+```
+
+
+:::
+
+
+::::
+:::::
+
+### Controle de Stock
+
+:::::{div} full-width
+::::{grid} 2
+
+:::{grid-item}
+:columns: 6
+
+> Explication
+
+
+:::
+
+:::{grid-item}
+:columns: 6
+
+```{figure} Docs/Gestion-stock-controle.png
+---
+width: 100%
+name: Gestion-stock-controle
+---
+Gestion-stock-controle
+```
+
+
+:::
+
+
+::::
+:::::
+
+
+
+
+
+
+### Optimisation
+
+- Table de rotation
+
+### Source d'erreurs de stock
+
+- Modif de stock faite a la rache
+
+```{note}
+
+Ne jamais modifier le stock en vente (ou a chaud en général)!!
+
+Faire F2 - K Trace stock (marche en vente, fiche produit, réception de commande ...) et rentrer un commentaire (est fait automatiquement si on diminue manuellement les dues)
+- Permet a tout le monde de signaler les erreurs mais seuls les personne abilité a modifier le stock vont modifier les stocks
+
+On le retrouve ensuite dans G Utilitaires - Listes - P stock a controler
+
+```
+
+- Controle nbr boite fin de vente
+- Réception commande
+

@@ -59,6 +59,41 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/jb-ID");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script src="../../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../../_static/design-tabs.js"></script>
@@ -69,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Menu/A-Comptoir/O-Retrocession-Retours/A-O-Retrocession-Retours';</script>
-    <link rel="canonical" href="https://deugz.github.io/nb-profile/_build/html/Menu/A-Comptoir/O-Retrocession-Retours/A-O-Retrocession-Retours.html" />
+    <link rel="canonical" href="https://deugz.github.io/jb-ID/_build/html/Menu/A-Comptoir/O-Retrocession-Retours/A-O-Retrocession-Retours.html" />
     <link rel="shortcut icon" href="../../../_static/LOGO_ID_RVB1.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Recherche" href="../../../search.html" />
@@ -118,6 +153,12 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">⚠ En Development  ⚠</div>
+  </div>
+
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
     </nav>
@@ -157,14 +198,6 @@ const thebe_selector_output = ".output, .cell_output"
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../../intro.html">
-                    Logiciel
-                </a>
-            </li>
-        </ul>
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../id%C3%A9es.html">Cette Documentation</a></li>
 </ul>
@@ -307,6 +340,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../D-Suivi-Admin/R-Modules/D-R-Modules.html">R- Modules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../D-Suivi-Admin/S-Livraison-Hors-Pillulier/D-S-Livraison-Hors-Pillulier.html">S- Livraison Hors Pilulier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../D-Suivi-Admin/T-Teledeclaration-Act-Ann/D-T-Teledeclaration-Act-Ann.html">Télédéclaration Activité Annuelle</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../E-Config/E-Config-Acceuil.html">E- Configuration</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -493,8 +527,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Roadmap/Roadmap-4.html">Cadre Propice</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Extras/Numerique-sante/Donnees/Donnees.html">Données</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-43"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Donnees/MSS.html">MSS</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/Segur.html">Ségur</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-43"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/INS.html">INS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/MSS.html">MSS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/Serialisation.html">Sérialisation</a></li>
 </ul>
 </li>
 </ul>
@@ -508,6 +544,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Extras/Projets/Projets.html">Projets Innovants</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
@@ -570,7 +607,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile" target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Dépôt source"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -587,7 +624,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile/edit/master/docs/Menu/A-Comptoir/O-Retrocession-Retours/A-O-Retrocession-Retours.md" target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID/edit/master/docs/Menu/A-Comptoir/O-Retrocession-Retours/A-O-Retrocession-Retours.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -604,7 +641,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile/issues/new?title=Issue%20on%20page%20%2FMenu/A-Comptoir/O-Retrocession-Retours/A-O-Retrocession-Retours.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID/issues/new?title=Issue%20on%20page%20%2FMenu/A-Comptoir/O-Retrocession-Retours/A-O-Retrocession-Retours.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Ouvrez un problème"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -727,6 +764,17 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceuil">Acceuil</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#retrocession">Rétrocession</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pour-une-pharmacie">Pour une pharmacie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recuperation-credit">Recupération crédit</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#astuce">Astuce</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#client-pharmacie-perimes-casses-voles">Client pharmacie périmés/cassés/volés</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#client-pharmacie-preparatoire">Client pharmacie préparatoire</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametres">Paramètres</a></li>
 </ul>
             </nav>
         </div>
@@ -744,8 +792,61 @@ document.write(`
 <h2>Acceuil<a class="headerlink" href="#acceuil" title="Lien permanent vers cette rubrique">#</a></h2>
 <div class="figure align-default" id="a-o-acceuil">
 <a class="reference internal image-reference" href="../../../_images/A-O1.png"><img alt="../../../_images/A-O1.png" src="../../../_images/A-O1.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 11 </span><span class="caption-text">A-O Page d’Acceuil</span><a class="headerlink" href="#a-o-acceuil" title="Lien permanent vers cette image">#</a></p>
+<p class="caption"><span class="caption-number">Fig. 17 </span><span class="caption-text">A-O Page d’Acceuil</span><a class="headerlink" href="#a-o-acceuil" title="Lien permanent vers cette image">#</a></p>
 </div>
+<p>Retour au fournisseur = retour labo, pas de payment.</p>
+</div>
+<div class="section" id="retrocession">
+<h2>Rétrocession<a class="headerlink" href="#retrocession" title="Lien permanent vers cette rubrique">#</a></h2>
+<p>Quel prix on prend ?</p>
+<ul class="simple">
+<li>PA Cat net (Prix catalogue - remise de base)</li>
+<li>PA Net (Prix Cat Net - remise 1 - remise 2)</li>
+<li>Prix de Revient (PA Net - UG)</li>
+</ul>
+<div class="section" id="pour-une-pharmacie">
+<h3>Pour une pharmacie<a class="headerlink" href="#pour-une-pharmacie" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Lorsque l’on fait une retrocession pour une pharmacie et qu’on scanne le code datamatrix de la boite, la boite n’est pas désactivé</p>
+</div>
+<ul class="simple">
+<li>Gestion de stock: normalement oui mais si on les a pas rentré en stock, non.</li>
+<li>Gestion des commandes: depend</li>
+<li>Mises a jour historique de vente: non</li>
+</ul>
+<p>Gestion en Prix Achat:</p>
+<ul class="simple">
+<li>Remisé</li>
+<li>Prix revient</li>
+</ul>
+<p>Selection des clients</p>
+<p>On peut mettre plusieurs pharmacies</p>
+<p>A la fin cela va directement au crédit</p>
+</div>
+<div class="section" id="recuperation-credit">
+<h3>Recupération crédit<a class="headerlink" href="#recuperation-credit" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Pour récupérer un crédit de rétrocession il faut aller dans Encaissement, encaissement crédit.</p>
+</div>
+</div>
+<div class="section" id="astuce">
+<h2>Astuce<a class="headerlink" href="#astuce" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="section" id="client-pharmacie-perimes-casses-voles">
+<h3>Client pharmacie périmés/cassés/volés<a class="headerlink" href="#client-pharmacie-perimes-casses-voles" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Créer un client Pharmacie périmés/cassés. Permet d’avoir un document que l’on peut donner au comptable pour avoir une trace de ces produits.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Si périmés labo, retour fournisseurs</p>
+</div>
+</div>
+<div class="section" id="client-pharmacie-preparatoire">
+<h3>Client pharmacie préparatoire<a class="headerlink" href="#client-pharmacie-preparatoire" title="Lien permanent vers cette rubrique">#</a></h3>
+<p>Permet de destocker les produits préparatoires</p>
+</div>
+</div>
+<div class="section" id="parametres">
+<h2>Paramètres<a class="headerlink" href="#parametres" title="Lien permanent vers cette rubrique">#</a></h2>
+<p>Edition des prix sur le bon de livraison: <strong>ne jamais cocher !!!</strong></p>
 </div>
 </div>
 
@@ -817,6 +918,17 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceuil">Acceuil</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#retrocession">Rétrocession</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pour-une-pharmacie">Pour une pharmacie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recuperation-credit">Recupération crédit</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#astuce">Astuce</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#client-pharmacie-perimes-casses-voles">Client pharmacie périmés/cassés/volés</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#client-pharmacie-preparatoire">Client pharmacie préparatoire</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parametres">Paramètres</a></li>
 </ul>
   </nav></div>
 

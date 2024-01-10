@@ -21,7 +21,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url:  https://github.com/Deugz/nb-profile  # Online location of your book
+  url:  https://github.com/Deugz/jb-ID  # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
 
@@ -34,13 +34,13 @@ html:
   use_issues_button         : true
 #  google_analytics_id       : 
 #  use_multitoc_numbering    : false    
-#  home_page_in_navbar       : false
-  baseurl                   : "https://deugz.github.io/nb-profile/_build/html/"
-#  comments:
-#    hypothesis              : true
-#    utterances              : 
-#      repo: "https://github.com/Deugz/jb-ID"
-#  announcement              : "⚠ En Development  ⚠"
+  home_page_in_navbar       : false
+  baseurl                   : "https://deugz.github.io/jb-ID/_build/html/"
+  comments:
+    hypothesis              : true
+    utterances              : 
+      repo: "https://github.com/Deugz/jb-ID"
+  announcement              : "⚠ En Development  ⚠"
 
 sphinx:
   extra_extensions:

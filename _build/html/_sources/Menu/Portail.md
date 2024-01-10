@@ -363,6 +363,13 @@ Le widget Liens
 
 ## Le Menu
 
+
+
+<p class="emphase"> Arborescence Ouverte</p>
+
+Rangement logique. Tout le comptoir d'un coté ...
+
+
 - gauche menue principal
 - sub menue specifique a la section
 - barre de recherche (indique le chemin a prendre)

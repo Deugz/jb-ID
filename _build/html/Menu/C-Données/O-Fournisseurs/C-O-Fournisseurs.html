@@ -59,6 +59,41 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "https://github.com/Deugz/jb-ID");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script src="../../../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../../_static/design-tabs.js"></script>
@@ -69,7 +104,7 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'Menu/C-Données/O-Fournisseurs/C-O-Fournisseurs';</script>
-    <link rel="canonical" href="https://deugz.github.io/nb-profile/_build/html/Menu/C-Données/O-Fournisseurs/C-O-Fournisseurs.html" />
+    <link rel="canonical" href="https://deugz.github.io/jb-ID/_build/html/Menu/C-Données/O-Fournisseurs/C-O-Fournisseurs.html" />
     <link rel="shortcut icon" href="../../../_static/LOGO_ID_RVB1.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Recherche" href="../../../search.html" />
@@ -118,6 +153,12 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content">⚠ En Development  ⚠</div>
+  </div>
+
   
     <nav class="bd-header navbar navbar-expand-lg bd-navbar">
     </nav>
@@ -157,14 +198,6 @@ const thebe_selector_output = ".output, .cell_output"
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="../../../intro.html">
-                    Logiciel
-                </a>
-            </li>
-        </ul>
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../id%C3%A9es.html">Cette Documentation</a></li>
 </ul>
@@ -307,6 +340,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../D-Suivi-Admin/R-Modules/D-R-Modules.html">R- Modules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../D-Suivi-Admin/S-Livraison-Hors-Pillulier/D-S-Livraison-Hors-Pillulier.html">S- Livraison Hors Pilulier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../D-Suivi-Admin/T-Teledeclaration-Act-Ann/D-T-Teledeclaration-Act-Ann.html">Télédéclaration Activité Annuelle</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../E-Config/E-Config-Acceuil.html">E- Configuration</a><input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -493,8 +527,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Roadmap/Roadmap-4.html">Cadre Propice</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Extras/Numerique-sante/Donnees/Donnees.html">Données</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-43"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Donnees/MSS.html">MSS</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/Segur.html">Ségur</a><input class="toctree-checkbox" id="toctree-checkbox-43" name="toctree-checkbox-43" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-43"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/INS.html">INS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/MSS.html">MSS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../Extras/Numerique-sante/Segur/Serialisation.html">Sérialisation</a></li>
 </ul>
 </li>
 </ul>
@@ -508,6 +544,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Extras/Projets/Projets.html">Projets Innovants</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
@@ -570,7 +607,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile" target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Dépôt source"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -587,7 +624,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile/edit/master/docs/Menu/C-Données/O-Fournisseurs/C-O-Fournisseurs.md" target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID/edit/master/docs/Menu/C-Données/O-Fournisseurs/C-O-Fournisseurs.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -604,7 +641,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/Deugz/nb-profile/issues/new?title=Issue%20on%20page%20%2FMenu/C-Données/O-Fournisseurs/C-O-Fournisseurs.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/Deugz/jb-ID/issues/new?title=Issue%20on%20page%20%2FMenu/C-Données/O-Fournisseurs/C-O-Fournisseurs.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Ouvrez un problème"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -728,6 +765,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceuil">Acceuil</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct">Direct</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#catalogues">Catalogues</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#catalogue-1">Catalogue 1</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#catalogues-cdi">Catalogues CDI</a><ul class="nav section-nav flex-column">
@@ -739,8 +777,10 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-pratique">Cas Pratique</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repartiteur">Répartiteur</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f2-gestion-des-codes-reponses">F2 - Gestion des codes réponses</a></li>
 </ul>
             </nav>
         </div>
@@ -758,11 +798,20 @@ document.write(`
 <h2>Acceuil<a class="headerlink" href="#acceuil" title="Lien permanent vers cette rubrique">#</a></h2>
 <div class="figure align-default" id="c-o-acceuil">
 <a class="reference internal image-reference" href="../../../_images/C-O1.png"><img alt="../../../_images/C-O1.png" src="../../../_images/C-O1.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 31 </span><span class="caption-text">C-O Page d’Acceuil</span><a class="headerlink" href="#c-o-acceuil" title="Lien permanent vers cette image">#</a></p>
+<p class="caption"><span class="caption-number">Fig. 45 </span><span class="caption-text">C-O Page d’Acceuil</span><a class="headerlink" href="#c-o-acceuil" title="Lien permanent vers cette image">#</a></p>
 </div>
 </div>
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Lien permanent vers cette rubrique">#</a></h2>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<p>Selon que vous séléctionniez un grossiste répartiteur ou un labo pour lequel on travail en direct, la page affiché sera sensiblement différente. Nous verrons donc deux exemples pour en étudier les aspects spécifiques</p>
+<ul class="last simple">
+<li><strong>A Checker</strong> …</li>
+</ul>
+</div>
+<div class="section" id="direct">
+<h3>Direct<a class="headerlink" href="#direct" title="Lien permanent vers cette rubrique">#</a></h3>
 <p class="emphase"><strong>UPSA</strong></p>
 <p>Analysons les possibilité … Avec le fournisseur UPSA</p>
 <div class="full-width docutils">
@@ -800,6 +849,7 @@ Transmission</label><div class="sd-tab-content docutils">
 Généralités</label><div class="sd-tab-content docutils">
 <div class="figure align-default" id="c-o-6">
 <a class="reference internal image-reference" href="../../../_images/C-O-6.png"><img alt="../../../_images/C-O-6.png" src="../../../_images/C-O-6.png" style="width: 100%;" /></a>
+</div>
 </div>
 </div>
 </div>
@@ -859,7 +909,135 @@ Généralités</label><div class="sd-tab-content docutils">
 <ul class="simple">
 <li>Comment mettre a disposition un catalogue dans ID?</li>
 </ul>
+<hr class="docutils" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Créer tab-item</p>
 </div>
+<div class="full-width docutils">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-5">
+Produits exclusifs</label><div class="sd-tab-content docutils">
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Insérer capture écran</p>
+</div>
+</div>
+<input id="sd-tab-item-6" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-6">
+Gestion commerciale</label><div class="sd-tab-content docutils">
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Insérer capture écran</p>
+</div>
+</div>
+<input id="sd-tab-item-7" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-7">
+Transmission</label><div class="sd-tab-content docutils">
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Insérer capture écran</p>
+</div>
+<ul class="simple">
+<li>Reference PharmaML: * permet d’avoir la liste de tout les repartiteurs</li>
+</ul>
+</div>
+<input id="sd-tab-item-8" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-8">
+Commandes speciales</label><div class="sd-tab-content docutils">
+<p>Permet de mettre en place une commande promis par example</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Insérer capture écran</p>
+</div>
+</div>
+<input id="sd-tab-item-9" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-9">
+Particularités</label><div class="sd-tab-content docutils">
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Insérer capture écran</p>
+</div>
+</div>
+<input id="sd-tab-item-10" name="sd-tab-set-1" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-10">
+Généralités</label><div class="sd-tab-content docutils">
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Insérer capture écran</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="repartiteur">
+<h3>Répartiteur<a class="headerlink" href="#repartiteur" title="Lien permanent vers cette rubrique">#</a></h3>
+<div class="full-width docutils">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-11" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-11">
+Produits Exclusifs</label><div class="sd-tab-content docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/C-Données/O-Fournisseurs/Docs/.png"><img alt="Menu/C-Données/O-Fournisseurs/Docs/.png" src="Menu/C-Données/O-Fournisseurs/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+<input id="sd-tab-item-12" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-12">
+Gestion Commerciale</label><div class="sd-tab-content docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/C-Données/O-Fournisseurs/Docs/.png"><img alt="Menu/C-Données/O-Fournisseurs/Docs/.png" src="Menu/C-Données/O-Fournisseurs/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+<input id="sd-tab-item-13" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-13">
+Transmission</label><div class="sd-tab-content docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/C-Données/O-Fournisseurs/Docs/.png"><img alt="Menu/C-Données/O-Fournisseurs/Docs/.png" src="Menu/C-Données/O-Fournisseurs/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+<input id="sd-tab-item-14" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-14">
+Commandes Spéciales</label><div class="sd-tab-content docutils">
+<div class="figure align-default" id="c-o-rep-com-spec">
+<a class="reference internal image-reference" href="../../../_images/C-O-Rep-Com-spec.png"><img alt="../../../_images/C-O-Rep-Com-spec.png" src="../../../_images/C-O-Rep-Com-spec.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 46 </span><span class="caption-text">C-O-Rep-Com-spec</span><a class="headerlink" href="#c-o-rep-com-spec" title="Lien permanent vers cette image">#</a></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Utile pour les commandes spéciales comme par example les commandes robot</p>
+</div>
+</div>
+<input id="sd-tab-item-15" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-15">
+Particularités</label><div class="sd-tab-content docutils">
+<div class="figure align-default" id="c-o-rep-part">
+<a class="reference internal image-reference" href="../../../_images/C-O-Rep-Part.png"><img alt="../../../_images/C-O-Rep-Part.png" src="../../../_images/C-O-Rep-Part.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 47 </span><span class="caption-text">C-O-Rep-Part</span><a class="headerlink" href="#c-o-rep-part" title="Lien permanent vers cette image">#</a></p>
+</div>
+</div>
+<input id="sd-tab-item-16" name="sd-tab-set-2" type="radio">
+</input><label class="sd-tab-label" for="sd-tab-item-16">
+Généralités</label><div class="sd-tab-content docutils">
+<div class="figure align-default">
+<a class="reference internal image-reference" href="Menu/C-Données/O-Fournisseurs/Docs/.png"><img alt="Menu/C-Données/O-Fournisseurs/Docs/.png" src="Menu/C-Données/O-Fournisseurs/Docs/.png" style="width: 100%;" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="f2-gestion-des-codes-reponses">
+<h2>F2 - Gestion des codes réponses<a class="headerlink" href="#f2-gestion-des-codes-reponses" title="Lien permanent vers cette rubrique">#</a></h2>
+<p>Qu’est ce qu’on fait au moment de la transmission avec les produits manquants:</p>
+<ul class="simple">
+<li>A retransmettre</li>
+<li>En attente de réception</li>
+</ul>
+<div class="admonition warning">
+<p class="first admonition-title">Avertissement</p>
+<p class="last">On a pas forcément tout les libéllés avant d’avoir fait la première commande. Il est ainsi utile de retourner paramétrer cette option aprés avoir fait nos premières commandes pour voire ceux qui se sont ajoutés et leur ajouter un traitement.</p>
 </div>
 </div>
 </div>
@@ -933,6 +1111,7 @@ Généralités</label><div class="sd-tab-content docutils">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceuil">Acceuil</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#direct">Direct</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#catalogues">Catalogues</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#catalogue-1">Catalogue 1</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#catalogues-cdi">Catalogues CDI</a><ul class="nav section-nav flex-column">
@@ -944,8 +1123,10 @@ Généralités</label><div class="sd-tab-content docutils">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#cas-pratique">Cas Pratique</a></li>
 </ul>
 </li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repartiteur">Répartiteur</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f2-gestion-des-codes-reponses">F2 - Gestion des codes réponses</a></li>
 </ul>
   </nav></div>
 

@@ -12,6 +12,16 @@ C-O Page d'Acceuil
 
 ## Example
 
+```{warning}
+
+Selon que vous séléctionniez un grossiste répartiteur ou un labo pour lequel on travail en direct, la page affiché sera sensiblement différente. Nous verrons donc deux exemples pour en étudier les aspects spécifiques  
+
+- **A Checker** ...
+
+```
+
+### Direct
+
 <p class="emphase"><strong>UPSA</strong></p>
 
 
@@ -166,3 +176,184 @@ Non abordé
 #### Cas Pratique
 
 - Comment mettre a disposition un catalogue dans ID?
+
+
+***
+
+
+```{note}
+
+Créer tab-item
+
+
+```
+
+
+:::::::{div} full-width
+
+::::::{tab-set}
+
+:::::{tab-item} Produits exclusifs
+
+```{note}
+
+Insérer capture écran
+
+```
+
+:::::
+
+:::::{tab-item} Gestion commerciale
+
+```{note}
+
+Insérer capture écran
+
+```
+
+:::::
+
+:::::{tab-item} Transmission
+
+```{note}
+
+Insérer capture écran
+
+```
+
+- Reference PharmaML: * permet d'avoir la liste de tout les repartiteurs
+
+
+:::::
+
+:::::{tab-item} Commandes speciales
+
+Permet de mettre en place une commande promis par example
+
+```{note}
+
+Insérer capture écran
+
+```
+
+:::::
+
+:::::{tab-item} Particularités
+
+```{note}
+
+Insérer capture écran
+
+```
+
+:::::
+
+:::::{tab-item} Généralités
+
+```{note}
+
+Insérer capture écran
+
+```
+
+:::::
+
+::::::
+
+:::::::
+
+### Répartiteur
+
+:::::::{div} full-width
+
+::::::{tab-set}
+
+:::::{tab-item} Produits Exclusifs
+
+```{figure} Docs/.png
+---
+width: 100%
+name:
+---
+```
+
+:::::
+
+:::::{tab-item} Gestion Commerciale
+
+```{figure} Docs/.png
+---
+width: 100%
+name:
+---
+```
+
+:::::
+
+:::::{tab-item} Transmission
+
+```{figure} Docs/.png
+---
+width: 100%
+name:
+---
+```
+
+:::::
+
+:::::{tab-item} Commandes Spéciales
+
+```{figure} Docs/C-O-Rep-Com-spec.png
+---
+width: 100%
+name: C-O-Rep-Com-spec
+---
+C-O-Rep-Com-spec
+```
+
+```{note}
+
+Utile pour les commandes spéciales comme par example les commandes robot
+
+```
+
+:::::
+
+:::::{tab-item} Particularités
+
+```{figure} Docs/C-O-Rep-Part.png
+---
+width: 100%
+name: C-O-Rep-Part
+---
+C-O-Rep-Part
+```
+
+:::::
+
+:::::{tab-item} Généralités
+
+```{figure} Docs/.png
+---
+width: 100%
+name:
+---
+```
+
+:::::
+
+::::::
+
+:::::::
+
+## F2 - Gestion des codes réponses
+
+Qu'est ce qu'on fait au moment de la transmission avec les produits manquants:
+- A retransmettre 
+- En attente de réception
+
+```{warning}
+
+On a pas forcément tout les libéllés avant d'avoir fait la première commande. Il est ainsi utile de retourner paramétrer cette option aprés avoir fait nos premières commandes pour voire ceux qui se sont ajoutés et leur ajouter un traitement.
+
+```
