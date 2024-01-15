@@ -241,6 +241,21 @@ parts:
         sections:
         - file: Formations/Facturation/Toutes-Ventes/Ventes-Directs
         - file: Formations/Facturation/Toutes-Ventes/Ventes-Ordonnances
+        - file: Formations/Facturation/Toutes-Ventes/Cas-Pratiques/Cas-pratiques
+          sections:
+          - file: Formations/Facturation/Toutes-Ventes/Cas-Pratiques/Avance/Avance
+          - file: Formations/Facturation/Toutes-Ventes/Cas-Pratiques/Corriger-Dossier/Corriger-Dossier
+          - file: Formations/Facturation/Toutes-Ventes/Cas-Pratiques/Maternité/Maternité
+          - file: Formations/Facturation/Toutes-Ventes/Cas-Pratiques/Mise-Attente/Mise-Attente
+          - file: Formations/Facturation/Toutes-Ventes/Cas-Pratiques/Retour-Prod/Retour-Prod
+          - file: Formations/Facturation/Toutes-Ventes/Cas-Pratiques/Vaccination/vaccination
+        - file: Formations/Facturation/Toutes-Ventes/Astuces/Astuces
+          sections:
+          - file: Formations/Facturation/Toutes-Ventes/Astuces/2-Ordos-1-patient/2-Ordos-1-patient
+          - file: Formations/Facturation/Toutes-Ventes/Astuces/Changer-reglement/Changer-Reglement
+          - file: Formations/Facturation/Toutes-Ventes/Astuces/Client-rapide/Client-Rapide
+          - file: Formations/Facturation/Toutes-Ventes/Astuces/Reedition-Ticket/Reedition-ticket
+          - file: Formations/Facturation/Toutes-Ventes/Astuces/Remise/Remise
       - file: Formations/Facturation/Creation-Prat-RPPS/Creation-Prat-RPPS
       - file: Formations/Facturation/BCB/Acces-BCB
       - file: Formations/Facturation/Remise-Dus/Remise-Dus
@@ -309,6 +324,7 @@ parts:
     - file: Extras/Projets/Projets
   - caption: Appendices
     chapters:
+    - file: Appendices/Changelog/Version
     - file: Appendices/bibliography
     - file: Mon-Espace/Mon-Espace
       sections:

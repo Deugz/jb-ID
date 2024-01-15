@@ -16,3 +16,13 @@
 
 
 <snomed-concept id="123456789" term="Hypertension"></snomed-concept>
+
+::::{div} full-width
+
+:::{dropdown} Bonnes pratiques
+
+<iframe src="https://groupewelcoop-my.sharepoint.com/personal/vincent_deguin_equasens_com/_layouts/15/Doc.aspx?sourcedoc={62ff2b23-92b5-475a-95a2-a379f042f263}&amp;action=embedview&amp;wdAr=1.6" width="1000px" height="563px" frameborder="0">Ceci est un document <a target="_blank" href="https://office.com">Microsoft Office</a> incorporé, avec <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+
+:::
+
+::::

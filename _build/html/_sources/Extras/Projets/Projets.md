@@ -20,14 +20,9 @@
 :::{grid-item}
 :columns: 6
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://www.youtube.com/embed/LeTTSCRPh0k?si=mvMDEnArq82XHFlS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div class="embedresize">
+<iframe width="100%" height="56.25%" src="https://www.youtube.com/embed/LeTTSCRPh0k?si=mvMDEnArq82XHFlS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
-
-```{note}
-
-Pas la bonne méthode
-
-```
 
 :::
 

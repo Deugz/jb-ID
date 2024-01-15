@@ -298,6 +298,12 @@ name: B-V-icon
 
 ## Les Bonnes Pratiques
 
+```{note}
+
+Insérer présentations dans un dropdown iframe ?
+
+```
+
 :::::{div} full-width
 
 
@@ -308,7 +314,9 @@ name: B-V-icon
 :::{grid-item}
 :columns: 6
 
-> Explication
+> La gestion des stocks est un élément clef de la rentabilité de l’officine, l’enjeu est de trouver un équilibre, de ne jamais être en rupture de stock sans pour autant stocker des quantités inutilement! En effet avoir le produit au bon moment avec la bonne quantité permet de satisfaire le patient, de le fidéliser donc à terme d’augmenter ses ventes sans pour autant augmenter le coût de stockage.
+Pour cela , le stock informatique et physique doivent être strictement concordants. Une gestion de stock se constitue à partir de sorties et d’entrée de produits, voir de réajustements si nécessaire. Pour une gestion de stock fiable les ventes  comme les réception de commande  doivent faire l’objet d’une attention particulière ainsi que des opérations régulières de contrôle des stock.
+
 
 
 :::
@@ -340,8 +348,7 @@ Gestion-stock-main
 :::{grid-item}
 :columns: 6
 
-> Explication
-
+> nous allons aborder les bonnes pratiques de la gestion de stock du coté des ventes. Cette mise en place des bonnes pratiques va nous permettre de fiabiliser les stocks informatiques par rapport aux stocks physique. Ainsi vous améliorez la rentabilité de votre officine par la maîtrise de vos stocks( rupture, surstock).
 
 :::
 
@@ -361,8 +368,13 @@ Gestion-stock-vente
 
 
 ::::
-:::::
 
+:::{dropdown} Bonnes pratiques
+
+<iframe src="https://groupewelcoop-my.sharepoint.com/personal/vincent_deguin_equasens_com/_layouts/15/Doc.aspx?sourcedoc={7e566d05-7af3-47e5-87c3-6fed1cb02d39}&amp;action=embedview&amp;wdAr=1.6" width="1000px" height="563px" frameborder="0">Ceci est un document <a target="_blank" href="https://office.com">Microsoft Office</a> incorporé, avec <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+:::
+
+:::::
 
 
 ### En Réception
@@ -373,7 +385,7 @@ Gestion-stock-vente
 :::{grid-item}
 :columns: 6
 
-> Explication
+> Dans les bonnes pratiques du coté des réceptions ce qui est primordial c’est que toutes entrées de produits soient enregistrées sur le logiciel. Différents cas de figures sont présentés,  du report des manquants en transmission à la réception quantitative avec tous les cas d’usage possibles ( gestion des reliquats, changement de cip, produit pris dans la caisse de livraison. ) nous aborderons la suivi de la remise des produits dus et la réception financière.
 
 
 :::
@@ -394,6 +406,13 @@ Gestion-stock-reception
 
 
 ::::
+
+:::{dropdown} Bonnes pratiques
+
+<iframe src="https://groupewelcoop-my.sharepoint.com/personal/vincent_deguin_equasens_com/_layouts/15/Doc.aspx?sourcedoc={d3fcaae4-5b39-4396-be08-bddede047594}&amp;action=embedview&amp;wdAr=1.6" width="1000px" height="563px" frameborder="0">Ceci est un document <a target="_blank" href="https://office.com">Microsoft Office</a> incorporé, avec <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+:::
+
+
 :::::
 
 ### Controle de Stock
@@ -404,7 +423,9 @@ Gestion-stock-reception
 :::{grid-item}
 :columns: 6
 
-> Explication
+> Dans les bonnes pratiques en gestion de stock, il est nécessaire de contrôler ses stocks, d’inventorier ses produits tout au long de l’année, de rechercher les erreurs, de réajuster.
+
+Nous allons donc étudier les différents cas de figure.
 
 
 :::
@@ -425,6 +446,15 @@ Gestion-stock-controle
 
 
 ::::
+
+
+:::{dropdown} Bonnes pratiques
+
+<iframe src="https://groupewelcoop-my.sharepoint.com/personal/vincent_deguin_equasens_com/_layouts/15/Doc.aspx?sourcedoc={2d7ba30c-da41-4aee-a34d-94d578246ca5}&amp;action=embedview&amp;wdAr=1.6" width="1000px" height="563px" frameborder="0">Ceci est un document <a target="_blank" href="https://office.com">Microsoft Office</a> incorporé, avec <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+:::
+
+
+
 :::::
 
 
